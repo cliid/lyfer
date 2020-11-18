@@ -1,0 +1,6 @@
+module Pods_lyfer {
+  umbrella header "Pods-lyfer-umbrella.h"
+
+  export *
+  module * { export * }
+}
