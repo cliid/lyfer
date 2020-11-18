@@ -8,6 +8,7 @@ import CalculatorView from './components/CalculatorView';
 import TimeView from './components/TimeView';
 import TimerView from './components/TimerView';
 import MusicView from './components/MusicView';
+import StopwatchView from './components/StopwatchView';
 
 const App = () => {
   const {colors} = useTheme();
@@ -29,10 +30,11 @@ const App = () => {
       <ThemeProvider hideNavBar={true}>
         <Router sceneStyle={styles.scene}>
           <SafeAreaView>
-            <Scene key="root" titleStyle={{alignSelf: 'center'}} hideNavBar>
-              <Scene key="time" component={TimeView} initial={true} />
+            <Scene key="root" hideNavBar>
+              <Scene key="time" component={TimeView} initial />
               <Scene key="calculator" component={CalculatorView} />
               <Scene key="timer" component={TimerView} />
+              <Scene key="stopwatch" component={StopwatchView} />
               <Scene key="music" component={MusicView} />
             </Scene>
           </SafeAreaView>

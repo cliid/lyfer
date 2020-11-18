@@ -112,3 +112,9 @@ package-lock.json
 
 # Android memory profiler files
 *.hprof
+ios/Pods/Flipper-Folly/folly/experimental/test/
+ios/Pods/Flipper-Folly/folly/poly/
+ios/Pods/Flipper-RSocket/yarpl/test/
+ios/Pods/Folly/folly/chrono/
+ios/Pods/Folly/folly/poly/
+ios/Pods/YogaKit/yoga/

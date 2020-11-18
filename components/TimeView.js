@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {useTheme} from './theme/ThemeContext';
 import {Toggle} from './Toggle';
@@ -54,7 +54,7 @@ const config = {
     name: 'Slope',
     min: 0,
     max: 1,
-    default: 0.13,
+    default: 0,
     step: 0.01,
   },
   scale: {
@@ -103,6 +103,7 @@ function TimeView() {
     <View style={styles.container}>
       <Text style={styles.time}>{curTime}</Text>
       <Toggle style={styles.toggle} />
+      <Button onPress={() => Actions.jump('stopwatch')} title="Stopwatch" />
     </View>
   );
 }

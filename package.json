@@ -10,12 +10,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "buffer": "^6.0.2",
+    "moment": "^2.29.1",
     "react": "16.13.1",
     "react-native": "0.63.3",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-reanimated": "^1.13.2",
     "react-native-router-flux": "^4.2.0",
-    "react-native-screens": "^2.15.0"
+    "react-native-screens": "^2.15.0",
+    "react-native-stopwatch-timer": "^0.0.21",
+    "react-native-swipe-gestures": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
