@@ -6,7 +6,6 @@ import {AppearanceProvider} from 'react-native-appearance';
 import {ThemeProvider, useTheme} from './components/theme/ThemeContext';
 import CalculatorView from './components/CalculatorView';
 import TimeView from './components/TimeView';
-import TimerView from './components/TimerView';
 import MusicView from './components/MusicView';
 import StopwatchView from './components/StopwatchView';
 
@@ -21,19 +20,16 @@ const App = () => {
     },
     scene: {
       backgroundColor: colors.background,
-      shadowOpacity: 1,
-      shadowRadius: 3,
     },
   });
   return (
     <AppearanceProvider hideNavBar={true}>
       <ThemeProvider hideNavBar={true}>
-        <Router sceneStyle={styles.scene}>
+        <Router>
           <SafeAreaView>
             <Scene key="root" hideNavBar>
               <Scene key="time" component={TimeView} initial />
               <Scene key="calculator" component={CalculatorView} />
-              <Scene key="timer" component={TimerView} />
               <Scene key="stopwatch" component={StopwatchView} />
               <Scene key="music" component={MusicView} />
             </Scene>

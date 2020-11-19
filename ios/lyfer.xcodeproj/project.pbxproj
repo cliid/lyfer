@@ -20,6 +20,8 @@
 		A2A74F9A3C5F4810D9EACE6A /* libPods-lyfer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC76A69EB7AB78944DE4A25 /* libPods-lyfer.a */; };
 		E2FA28D36952B523644AF729 /* libPods-lyfer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 596A04429E9971BAF48E5A27 /* libPods-lyfer-tvOSTests.a */; };
 		EE3AB5926688580B76F00B20 /* libPods-lyfer-lyferTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A368A9C7E335A5E6E911770B /* libPods-lyfer-lyferTests.a */; };
+		AE83B6EF27B2466FA2DD4CBD /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1EB9E31BD4214338AAF2D9D5 /* Nexa Bold.otf */; };
+		0D9B90F793FA4C51B1B2D456 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A77F77778CD4669BBE8536C /* Nexa Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0F2FEB31BB16C5F29B6098E /* Pods-lyfer-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lyfer-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-lyfer-tvOSTests/Pods-lyfer-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA54B0CA303CA6F0001017F4 /* Pods-lyfer-lyferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lyfer-lyferTests.debug.xcconfig"; path = "Target Support Files/Pods-lyfer-lyferTests/Pods-lyfer-lyferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EB9E31BD4214338AAF2D9D5 /* Nexa Bold.otf */ = {isa = PBXFileReference; name = "Nexa Bold.otf"; path = "../assets/fonts/Nexa Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A77F77778CD4669BBE8536C /* Nexa Light.otf */ = {isa = PBXFileReference; name = "Nexa Light.otf"; path = "../assets/fonts/Nexa Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				46B791CB99EF6B17CBC938A0 /* Pods */,
+				E3B7122348CC4B26A091D67E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +202,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		E3B7122348CC4B26A091D67E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1EB9E31BD4214338AAF2D9D5 /* Nexa Bold.otf */,
+				9A77F77778CD4669BBE8536C /* Nexa Light.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +357,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AE83B6EF27B2466FA2DD4CBD /* Nexa Bold.otf in Resources */,
+				0D9B90F793FA4C51B1B2D456 /* Nexa Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

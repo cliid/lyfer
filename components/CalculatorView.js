@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 import {Actions} from 'react-native-router-flux';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,12 +10,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  time: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  button: {
+  text: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
@@ -22,24 +18,57 @@ const styles = StyleSheet.create({
 });
 
 class CalculatorView extends React.Component {
-  state = {
-    curTime: null,
-  };
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        curTime: new Date().getTime().toLocaleString(),
-      });
-    }, 1000);
+  constructor(props) {
+    super(props);
+    this.state = {
+      gestureName: 'none',
+    };
+  }
+  onSwipeUp(gestureState) {
+    Actions.jump('stopwatch');
+  }
+
+  onSwipeDown(gestureState) {
+    Actions.jump('time');
+  }
+
+  onSwipeLeft(gestureState) {
+    Actions.jump('calculator');
+  }
+
+  onSwipeRight(gestureState) {
+    Actions.jump('music');
+  }
+
+  onSwipe(gestureName, gestureState) {
+    const {SWIPE_UP, SWIPE_DOWN, SWIPE_LEFT, SWIPE_RIGHT} = swipeDirections;
+    this.setState({gestureName: gestureName});
+    switch (gestureName) {
+      case SWIPE_UP:
+        Actions.jump('stopwatch');
+        break;
+      case SWIPE_DOWN:
+        Actions.jump('time');
+        break;
+      case SWIPE_LEFT:
+        Actions.jump('calculator');
+        break;
+      case SWIPE_RIGHT:
+        Actions.jump('music');
+        break;
+    }
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.time}>{this.state.curTime}</Text>
-        <Button style={styles.button} onClick={Actions.push('music')}>
-          to music
-        </Button>
-      </View>
+      <GestureRecognizer
+        onSwipe={(direction, state) => this.onSwipe(direction, state)}
+        onSwipeUp={(state) => this.onSwipeUp(state)}
+        onSwipeDown={(state) => this.onSwipeDown(state)}
+        onSwipeLeft={(state) => this.onSwipeLeft(state)}
+        onSwipeRight={(state) => this.onSwipeRight(state)}
+        style={styles.container}>
+        <Text style={styles.text}>Music</Text>
+      </GestureRecognizer>
     );
   }
 }

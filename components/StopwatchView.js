@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import moment from 'moment';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
+import {Actions} from 'react-native-router-flux';
 
 function Timer({interval, style}) {
   const pad = (n) => (n < 10 ? '0' + n : n);
@@ -79,10 +81,12 @@ function LapsTable({laps, timer}) {
 function ButtonsRow({children}) {
   return <View style={styles.buttonsRow}>{children}</View>;
 }
+
 export default class StopwatchView extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      gestureName: 'none',
       start: 0,
       now: 0,
       laps: [],
@@ -91,7 +95,40 @@ export default class StopwatchView extends Component {
   componentWillUnmount() {
     clearInterval(this.timer);
   }
+  onSwipeUp(gestureState) {
+    Actions.jump('stopwatch');
+  }
 
+  onSwipeDown(gestureState) {
+    Actions.jump('time');
+  }
+
+  onSwipeLeft(gestureState) {
+    Actions.jump('calculator');
+  }
+
+  onSwipeRight(gestureState) {
+    Actions.jump('music');
+  }
+
+  onSwipe(gestureName, gestureState) {
+    const {SWIPE_UP, SWIPE_DOWN, SWIPE_LEFT, SWIPE_RIGHT} = swipeDirections;
+    this.setState({gestureName: gestureName});
+    switch (gestureName) {
+      case SWIPE_UP:
+        Actions.jump('stopwatch');
+        break;
+      case SWIPE_DOWN:
+        Actions.jump('time');
+        break;
+      case SWIPE_LEFT:
+        Actions.jump('calculator');
+        break;
+      case SWIPE_RIGHT:
+        Actions.jump('music');
+        break;
+    }
+  }
   start = () => {
     const now = new Date().getTime();
     this.setState({
@@ -146,7 +183,13 @@ export default class StopwatchView extends Component {
     const {now, start, laps} = this.state;
     const timer = now - start;
     return (
-      <View style={styles.container}>
+      <GestureRecognizer
+        onSwipe={(direction, state) => this.onSwipe(direction, state)}
+        onSwipeUp={(state) => this.onSwipeUp(state)}
+        onSwipeDown={(state) => this.onSwipeDown(state)}
+        onSwipeLeft={(state) => this.onSwipeLeft(state)}
+        onSwipeRight={(state) => this.onSwipeRight(state)}
+        style={styles.container}>
         <Timer
           interval={laps.reduce((total, curr) => total + curr, 0) + timer}
           style={styles.timer}
@@ -155,7 +198,7 @@ export default class StopwatchView extends Component {
           <ButtonsRow>
             <RoundButton
               title="Lap"
-              color="#8B8B90"
+              color="#ffffff"
               background="#151515"
               disabled
             />
@@ -200,7 +243,7 @@ export default class StopwatchView extends Component {
           </ButtonsRow>
         )}
         <LapsTable laps={laps} timer={timer} />
-      </View>
+      </GestureRecognizer>
     );
   }
 }
