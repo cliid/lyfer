@@ -1,42 +1,75 @@
-import {Scene, Router} from 'react-native-router-flux';
 import React from 'react';
+import {
+  Provider as PaperProvider,
+  DefaultTheme as PaperDefaultTheme,
+  DarkTheme as PaperDarkTheme,
+} from 'react-native-paper';
+import {
+  NavigationContainer,
+  DefaultTheme as NavigationDefaultTheme,
+  DarkTheme as NavigationDarkTheme,
+} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import ClockScreen from './src/screens/ClockScreen';
+import MusicScreen from './src/screens/MusicScreen';
+import CalculatorScreen from './src/screens/CalculatorScreen';
+import StopwatchScreen from './src/screens/StopwatchScreen';
+import TimerScreen from './src/screens/TimerScreen';
+import {DrawerContent} from './src/DrawerContent';
+import {Context} from './src/components/Context';
 
-import {SafeAreaView, StyleSheet} from 'react-native';
-import {AppearanceProvider} from 'react-native-appearance';
-import {ThemeProvider, useTheme} from './components/theme/ThemeContext';
-import CalculatorView from './components/CalculatorView';
-import TimeView from './components/TimeView';
-import MusicView from './components/MusicView';
-import StopwatchView from './components/StopwatchView';
+const Drawer = createDrawerNavigator();
 
 const App = () => {
-  const {colors} = useTheme();
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'transparent',
-      justifyContent: 'center',
-      alignItems: 'center',
+  const [isDarkTheme, setIsDarkTheme] = React.useState(false);
+  const LyferDefaultTheme = {
+    ...NavigationDefaultTheme,
+    ...PaperDefaultTheme,
+    colors: {
+      ...NavigationDefaultTheme.colors,
+      ...PaperDefaultTheme.colors,
+      background: '#ffffff',
+      text: '#000000',
     },
-    scene: {
-      backgroundColor: colors.background,
+  };
+
+  const LyferDarkTheme = {
+    ...NavigationDarkTheme,
+    ...PaperDarkTheme,
+    colors: {
+      ...NavigationDarkTheme.colors,
+      ...PaperDarkTheme.colors,
+      background: '#000000',
+      text: '#ffffff',
     },
-  });
+  };
+  const theme = isDarkTheme ? LyferDarkTheme : LyferDefaultTheme;
+
+  const context = React.useMemo(
+    () => ({
+      toggleTheme: () => {
+        setIsDarkTheme((isDarkTheme) => !isDarkTheme);
+      },
+    }),
+    [],
+  );
+
   return (
-    <AppearanceProvider hideNavBar={true}>
-      <ThemeProvider hideNavBar={true}>
-        <Router>
-          <SafeAreaView>
-            <Scene key="root" hideNavBar>
-              <Scene key="time" component={TimeView} initial />
-              <Scene key="calculator" component={CalculatorView} />
-              <Scene key="stopwatch" component={StopwatchView} />
-              <Scene key="music" component={MusicView} />
-            </Scene>
-          </SafeAreaView>
-        </Router>
-      </ThemeProvider>
-    </AppearanceProvider>
+    <PaperProvider theme={theme}>
+      <Context.Provider value={context}>
+        <NavigationContainer theme={theme}>
+          <Drawer.Navigator
+            initialRouteName="Clock"
+            drawerContent={(props) => <DrawerContent {...props} />}>
+            <Drawer.Screen name="Clock" component={ClockScreen} />
+            <Drawer.Screen name="Timer" component={TimerScreen} />
+            <Drawer.Screen name="Stopwatch" component={StopwatchScreen} />
+            <Drawer.Screen name="Music" component={MusicScreen} />
+            <Drawer.Screen name="Calculator" component={CalculatorScreen} />
+          </Drawer.Navigator>
+        </NavigationContainer>
+      </Context.Provider>
+    </PaperProvider>
   );
 };
 
