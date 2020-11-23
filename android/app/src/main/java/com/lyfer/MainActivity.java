@@ -1,4 +1,4 @@
-package com.lyfer;
+package org.jitcijk.lyfer;
 
 import android.os.Bundle; // <- add this necessary import
 

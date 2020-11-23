@@ -20,7 +20,7 @@ function ClockScreen() {
 
   useEffect(() => {
     setInterval(() => setCurTime(new Date().toTimeString().split(' ')[0]), 100);
-  });
+  }, []);
 
   return (
     <View style={styles.container}>
