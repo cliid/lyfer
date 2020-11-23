@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import RNBootSplash from 'react-native-bootsplash';
 import {
   Provider as PaperProvider,
   DefaultTheme as PaperDefaultTheme,
@@ -21,6 +22,10 @@ import {Context} from './src/components/Context';
 const Drawer = createDrawerNavigator();
 
 const App = () => {
+  useEffect(() => {
+    RNBootSplash.hide({fade: true, duration: 500}); // fade
+  }, []);
+
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
   const LyferDefaultTheme = {
     ...NavigationDefaultTheme,

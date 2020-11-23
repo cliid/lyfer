@@ -120,6 +120,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_bootsplash.xml.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/drawable/bootsplash.xml"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_dot_group_animation.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml"
     },
@@ -432,6 +436,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_bootsplash_logo.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-hdpi/bootsplash_logo.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
@@ -504,6 +512,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/interpolator-v21/mtrl_linear_out_slow_in.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-xxxhdpi/bootsplash_logo.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -560,12 +572,12 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/color/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_material_on_surface_emphasis_medium.xml.flat",
@@ -1100,6 +1112,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-xxhdpi/bootsplash_logo.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/color-v23/abc_color_highlight_material.xml"
     },
@@ -1462,6 +1478,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_bootsplash_logo.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-mdpi/bootsplash_logo.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2162,6 +2182,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-xhdpi/bootsplash_logo.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat",
