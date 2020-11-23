@@ -23,7 +23,7 @@ const Drawer = createDrawerNavigator();
 
 const App = () => {
   useEffect(() => {
-    RNBootSplash.hide({fade: true, duration: 500}); // fade
+    RNBootSplash.hide({fade: false, duration: 3000}); // fade
   }, []);
 
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);

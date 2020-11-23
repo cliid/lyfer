@@ -12,7 +12,6 @@ function ClockScreen() {
     },
     time: {
       fontSize: 50,
-      fontFamily: 'SF-Pro-Display-Regular',
       textAlign: 'center',
       margin: 10,
     },

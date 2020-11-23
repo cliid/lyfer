@@ -22,21 +22,22 @@ class StopwatchScreen extends Component {
 
   handleLapReset() {
     let {isRunning, mainTimerStart, lapTimer} = this.state;
-    if (mainTimerStart && !isRunning) {
+    if (mainTimerStart) {
+      if (isRunning) {
+        const d = new Date();
+        this.setState({
+          lapTimerStart: d,
+          lapTimer: d - this.state.lapTimerStart + lapTimer,
+          laps: this.state.laps.concat([d - this.state.lapTimerStart]),
+        });
+        return;
+      }
       this.state.laps = [];
       this.setState({
         mainTimerStart: null,
         lapTimerStart: null,
         mainTimer: 0,
         lapTimer: 0,
-      });
-    } else if (mainTimerStart && isRunning) {
-      const currentLapTime = new Date() - this.state.lapTimerStart + lapTimer;
-
-      this.setState({
-        lapTimerStart: new Date(),
-        lapTimer: new Date() - this.state.lapTimerStart + lapTimer,
-        laps: this.state.laps.concat([currentLapTime]),
       });
     }
   }
@@ -49,18 +50,20 @@ class StopwatchScreen extends Component {
       });
       return;
     }
+    const d = new Date();
     this.setState({
-      mainTimerStart: new Date(),
-      lapTimerStart: new Date(),
+      mainTimerStart: d,
+      lapTimerStart: d,
       isRunning: true,
     });
 
     this.interval = setInterval(() => {
+      const t = new Date();
       this.setState({
-        mainTimer: new Date() - this.state.mainTimerStart + mainTimer,
-        lapTimer: new Date() - this.state.lapTimerStart + lapTimer,
+        mainTimer: t - this.state.mainTimerStart + mainTimer,
+        lapTimer: t - this.state.lapTimerStart + lapTimer,
       });
-    }, 30);
+    }, 10);
   }
   _renderTimers() {
     return (
