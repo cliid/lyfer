@@ -6,8 +6,9 @@ import {
   TouchableHighlight,
   FlatList,
 } from 'react-native';
+import {useTheme} from 'react-native-paper';
 import TimeFormatter from 'minutes-seconds-milliseconds';
-class StopwatchScreen extends Component {
+class Stopwatch extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,14 +67,19 @@ class StopwatchScreen extends Component {
     }, 1);
   }
   _renderTimers() {
+    const {theme} = this.props;
     return (
-      <View style={styles.timerWrapper}>
+      <View
+        style={[
+          styles.timerWrapper,
+          {backgroundColor: theme.colors.background},
+        ]}>
         <View style={styles.timerWrapperInner}>
-          <Text style={styles.lapTimer}>
+          <Text style={[styles.lapTimer, {color: theme.colors.text}]}>
             {TimeFormatter(this.state.lapTimer)}
           </Text>
 
-          <Text style={styles.mainTimer}>
+          <Text style={[styles.mainTimer, {color: theme.colors.text}]}>
             {TimeFormatter(this.state.mainTimer)}
           </Text>
         </View>
@@ -81,22 +87,23 @@ class StopwatchScreen extends Component {
     );
   }
   _renderButtons() {
+    const {theme} = this.props;
     return (
       <View style={styles.buttonWrapper}>
         <TouchableHighlight
-          underlayColor="#ddd"
+          underlayColor={theme.colors.disabled}
           onPress={this.handleLapReset.bind(this)}
-          style={styles.button}>
-          <Text style={styles.lapResetBtn}>
+          style={[styles.button, {backgroundColor: theme.colors.background}]}>
+          <Text style={[styles.lapResetBtn, {color: theme.colors.text}]}>
             {this.state.mainTimerStart && !this.state.isRunning
               ? 'Reset'
               : 'Lap'}
           </Text>
         </TouchableHighlight>
         <TouchableHighlight
-          underlayColor="#ddd"
+          underlayColor={theme.colors.disabled}
           onPress={this.handleStartStop.bind(this)}
-          style={styles.button}>
+          style={[styles.button, {backgroundColor: theme.colors.background}]}>
           <Text
             style={[styles.startBtn, this.state.isRunning && styles.stopBtn]}>
             {this.state.isRunning ? 'Stop' : 'Start'}
@@ -145,7 +152,6 @@ class StopwatchScreen extends Component {
 const styles = StyleSheet.create({
   container: {flex: 1},
   timerWrapper: {
-    backgroundColor: '#FFFFFF',
     justifyContent: 'center',
     flex: 1,
   },
@@ -221,4 +227,8 @@ const styles = StyleSheet.create({
     fontFamily: 'CircularStd-Book',
   },
 });
-export default StopwatchScreen;
+export default function StopwatchScreen(props) {
+  const theme = useTheme();
+
+  return <Stopwatch {...props} theme={theme} />;
+}
