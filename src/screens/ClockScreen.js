@@ -18,7 +18,7 @@ function ClockScreen() {
   });
 
   useEffect(() => {
-    setInterval(() => setCurTime(new Date().toTimeString().split(' ')[0]), 100);
+    setInterval(() => setCurTime(new Date().toTimeString().split(' ')[0]), 10);
   }, []);
 
   return (

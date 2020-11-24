@@ -40,6 +40,7 @@ export function DrawerContent(props) {
               />
             )}
             label="Clock"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Clock');
             }}
@@ -53,6 +54,7 @@ export function DrawerContent(props) {
               />
             )}
             label="Timer"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Timer');
             }}
@@ -66,6 +68,7 @@ export function DrawerContent(props) {
               />
             )}
             label="Stopwatch"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Stopwatch');
             }}
@@ -79,6 +82,7 @@ export function DrawerContent(props) {
               />
             )}
             label="Music"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Music');
             }}
@@ -92,6 +96,7 @@ export function DrawerContent(props) {
               />
             )}
             label="Calculator"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Calculator');
             }}
@@ -100,7 +105,7 @@ export function DrawerContent(props) {
         <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => toggleTheme()}>
             <View style={styles.preference}>
-              <Text style={styles.text}>Dark Theme</Text>
+              <Text>Dark Theme</Text>
               <View pointerEvents="none">
                 <Switch value={paperTheme.dark} />
               </View>
@@ -122,9 +127,11 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     fontWeight: 'bold',
+    fontFamily: 'CircularStd-Medium',
   },
   caption: {
     fontSize: 14,
+    fontFamily: 'CircularStd-Medium',
     lineHeight: 14,
   },
   row: {

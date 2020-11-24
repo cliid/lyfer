@@ -1,0 +1,6 @@
+module react_native_track_player {
+  umbrella header "react-native-track-player-umbrella.h"
+
+  export *
+  module * { export * }
+}

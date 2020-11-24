@@ -63,7 +63,7 @@ class StopwatchScreen extends Component {
         mainTimer: t - this.state.mainTimerStart + mainTimer,
         lapTimer: t - this.state.lapTimerStart + lapTimer,
       });
-    }, 10);
+    }, 1);
   }
   _renderTimers() {
     return (
@@ -87,7 +87,7 @@ class StopwatchScreen extends Component {
           underlayColor="#ddd"
           onPress={this.handleLapReset.bind(this)}
           style={styles.button}>
-          <Text>
+          <Text style={styles.lapResetBtn}>
             {this.state.mainTimerStart && !this.state.isRunning
               ? 'Reset'
               : 'Lap'}
@@ -122,8 +122,13 @@ class StopwatchScreen extends Component {
   renderItem({item, index}) {
     return (
       <View style={styles.lapRow}>
-        <Text style={styles.lapNumber}>{index + 1}</Text>
-        <Text style={styles.lapTime}>{TimeFormatter(item)}</Text>
+        <View style={{width: '40%', flexDirection: 'row'}}>
+          <View style={{flexDirection: 'row', flex: 1}} />
+          <Text style={styles.lapNumber}>{index + 1}</Text>
+        </View>
+        <View style={{width: '40%', flexDirection: 'row'}}>
+          <Text style={styles.lapTime}>{TimeFormatter(item)}</Text>
+        </View>
       </View>
     );
   }
@@ -139,10 +144,6 @@ class StopwatchScreen extends Component {
 }
 const styles = StyleSheet.create({
   container: {flex: 1},
-  title: {
-    alignSelf: 'center',
-    fontWeight: '600',
-  },
   timerWrapper: {
     backgroundColor: '#FFFFFF',
     justifyContent: 'center',
@@ -159,12 +160,13 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   mainTimer: {
-    fontSize: 60,
-    fontWeight: '100',
+    fontSize: 50,
+    fontFamily: 'CircularStd-Medium',
     alignSelf: 'center',
   },
   lapTimer: {
     fontSize: 18,
+    fontFamily: 'CircularStd-Medium',
     alignSelf: 'flex-end',
   },
   timerWrapperInner: {
@@ -186,29 +188,37 @@ const styles = StyleSheet.create({
   },
   lapRow: {
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
     height: 40,
     paddingTop: 10,
-    borderBottomWidth: 0.5,
-    borderBottomColor: '#ddd',
   },
   lapNumber: {
+    flexDirection: 'row',
     fontSize: 16,
+    fontFamily: 'CircularStd-Book',
     color: '#777',
+    flex: 1,
   },
   lapTime: {
+    flexDirection: 'row',
     color: '#000',
     fontSize: 20,
-    fontWeight: '300',
+    fontFamily: 'CircularStd-Book',
+    flex: 1,
   },
   startBtn: {
     color: '#0C0',
+    fontFamily: 'CircularStd-Book',
   },
   stopBtn: {
     color: '#C00',
+    fontFamily: 'CircularStd-Book',
   },
   lapsWrapper: {
     backgroundColor: '#ddd',
+  },
+  lapResetBtn: {
+    fontFamily: 'CircularStd-Book',
   },
 });
 export default StopwatchScreen;

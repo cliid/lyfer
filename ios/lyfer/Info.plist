@@ -19,24 +19,14 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
-		<string>SF-Pro-Display-Black.otf</string>
-		<string>SF-Pro-Display-BlackItalic.otf</string>
-		<string>SF-Pro-Display-Bold.otf</string>
-		<string>SF-Pro-Display-BoldItalic.otf</string>
-		<string>SF-Pro-Display-Heavy.otf</string>
-		<string>SF-Pro-Display-HeavyItalic.otf</string>
-		<string>SF-Pro-Display-Light.otf</string>
-		<string>SF-Pro-Display-LightItalic.otf</string>
-		<string>SF-Pro-Display-Medium.otf</string>
-		<string>SF-Pro-Display-MediumItalic.otf</string>
-		<string>SF-Pro-Display-Regular.otf</string>
-		<string>SF-Pro-Display-RegularItalic.otf</string>
-		<string>SF-Pro-Display-Semibold.otf</string>
-		<string>SF-Pro-Display-SemiboldItalic.otf</string>
-		<string>SF-Pro-Display-Thin.otf</string>
-		<string>SF-Pro-Display-ThinItalic.otf</string>
-		<string>SF-Pro-Display-Ultralight.otf</string>
-		<string>SF-Pro-Display-UltralightItalic.otf</string>
+		<string>CircularStd-Black.ttf</string>
+		<string>CircularStd-BlackItalic.ttf</string>
+		<string>CircularStd-Bold.ttf</string>
+		<string>CircularStd-BoldItalic.ttf</string>
+		<string>CircularStd-Book.ttf</string>
+		<string>CircularStd-BookItalic.ttf</string>
+		<string>CircularStd-Medium.ttf</string>
+		<string>CircularStd-MediumItalic.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

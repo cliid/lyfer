@@ -4,7 +4,7 @@
             "outputFile": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/values-sv/values-sv.xml",
+                    "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

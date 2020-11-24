@@ -13,7 +13,6 @@ function TimerScreen() {
     },
     time: {
       fontSize: 50,
-      fontFamily: 'SF-Pro-Display-Regular',
       textAlign: 'center',
       color: colors.text,
       margin: 10,

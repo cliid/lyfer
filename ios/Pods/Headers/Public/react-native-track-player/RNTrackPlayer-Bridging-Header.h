@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-track-player/ios/RNTrackPlayer/Support/RNTrackPlayer-Bridging-Header.h

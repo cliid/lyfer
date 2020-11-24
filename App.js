@@ -4,6 +4,7 @@ import {
   Provider as PaperProvider,
   DefaultTheme as PaperDefaultTheme,
   DarkTheme as PaperDarkTheme,
+  configureFonts,
 } from 'react-native-paper';
 import {
   NavigationContainer,
@@ -23,10 +24,32 @@ const Drawer = createDrawerNavigator();
 
 const App = () => {
   useEffect(() => {
-    RNBootSplash.hide({fade: false, duration: 3000}); // fade
+    RNBootSplash.hide({fade: false, duration: 1000}); // fade
   }, []);
 
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
+
+  const fontConfig = {
+    default: {
+      regular: {
+        fontFamily: 'CircularStd-Medium',
+        fontWeight: 'normal',
+      },
+      medium: {
+        fontFamily: 'CircularStd-Medium',
+        fontWeight: 'normal',
+      },
+      light: {
+        fontFamily: 'CircularStd-Medium',
+        fontWeight: 'normal',
+      },
+      thin: {
+        fontFamily: 'CircularStd-Medium',
+        fontWeight: 'normal',
+      },
+    },
+  };
+
   const LyferDefaultTheme = {
     ...NavigationDefaultTheme,
     ...PaperDefaultTheme,
@@ -36,6 +59,7 @@ const App = () => {
       background: '#ffffff',
       text: '#000000',
     },
+    fonts: configureFonts(fontConfig),
   };
 
   const LyferDarkTheme = {
@@ -47,6 +71,7 @@ const App = () => {
       background: '#000000',
       text: '#ffffff',
     },
+    fonts: configureFonts(fontConfig),
   };
   const theme = isDarkTheme ? LyferDarkTheme : LyferDefaultTheme;
 

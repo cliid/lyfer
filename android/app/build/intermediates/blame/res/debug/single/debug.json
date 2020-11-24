@@ -20,6 +20,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_stop.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/stop.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -32,8 +36,12 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/layout/mtrl_calendar_day_of_week.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_next.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/next.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_mtrl_picker_header_selection_text.xml.flat",
@@ -140,12 +148,20 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/anim/abc_slide_out_top.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_pause.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/pause.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_mtrl_calendar_item_stroke_color.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/mtrl_calendar_item_stroke_color.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_days_of_week.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/layout/mtrl_calendar_days_of_week.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_play.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/play.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat",
@@ -176,8 +192,16 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_play.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/play.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_fragment_fade_enter.xml.flat",
@@ -189,7 +213,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -205,7 +229,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_mtrl_indicator_text_color.xml.flat",
@@ -348,6 +372,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/animator/mtrl_extended_fab_change_size_motion_spec.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_previous.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/previous.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -404,6 +432,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_lines_media.xml"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -449,7 +481,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable/notification_bg_low.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_design_navigation_item_subheader.xml.flat",
@@ -461,11 +493,15 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/notification_template_part_time.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_fragment_open_enter.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/37aaca75d3d19faa6fb296103cea95d8/fragment-1.2.1/res/anim/fragment_open_enter.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
@@ -497,7 +533,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -573,7 +609,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v16/notification_template_custom_big.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout-v16/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
@@ -649,7 +685,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -665,7 +701,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/notification_action.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
@@ -941,7 +977,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -957,7 +993,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_edittext.xml.flat",
@@ -1048,6 +1084,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_forward.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/forward.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
@@ -1086,6 +1126,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_next.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/next.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
@@ -1144,6 +1188,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/drawable/ic_mtrl_chip_checked_circle.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_play.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/play.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -1177,7 +1225,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout-v21/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
@@ -1197,7 +1245,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v21/notification_action.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout-v21/notification_action.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_abc_tooltip_enter.xml.flat",
@@ -1244,6 +1292,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_pause.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/pause.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
@@ -1262,6 +1314,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_test_mtrl_calendar_day.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/test_mtrl_calendar_day.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_forward.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/forward.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1293,7 +1349,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/notification_template_icon_group.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1324,6 +1380,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_pause.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/pause.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png"
     },
@@ -1333,7 +1393,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1408,6 +1468,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_rewind.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/rewind.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1456,12 +1520,20 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/interpolator/fast_out_slow_in.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_pause.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/pause.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_mtrl_filled_icon_tint.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/mtrl_filled_icon_tint.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_next.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/next.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1486,6 +1558,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_play.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/play.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -1572,6 +1648,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_next.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/next.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
@@ -1581,7 +1661,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable/notification_icon_background.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
@@ -1625,7 +1705,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_test_custom_background.xml.flat",
@@ -1633,7 +1713,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1645,7 +1725,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1660,12 +1740,24 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_forward.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/forward.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim-v21_fragment_fast_out_extra_slow_in.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/37aaca75d3d19faa6fb296103cea95d8/fragment-1.2.1/res/anim-v21/fragment_fast_out_extra_slow_in.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_stop.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/stop.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_rewind.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/rewind.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_mtrl_calendar_month_navigation.xml.flat",
@@ -1780,6 +1872,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_pause.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/pause.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_checked_box_inner_merged_animation.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml"
     },
@@ -1794,6 +1890,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_previous.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/previous.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
@@ -1829,7 +1929,11 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_design_icon_tint.xml.flat",
@@ -1841,7 +1945,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_custom_dialog.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/custom_dialog.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/custom_dialog.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
@@ -1880,6 +1984,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/mtrl_extended_fab_ripple_color.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_stop.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/stop.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_cab_background_top_material.xml"
     },
@@ -1916,6 +2024,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/326d1a96e0f451934893d7c5d8e55570/jetified-react-native-0.63.3/res/drawable/redbox_top_border_background.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -1928,8 +2040,16 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/layout/mtrl_layout_snackbar.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_stop.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/stop.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/interpolator_mtrl_fast_out_slow_in.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/interpolator/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_previous.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/previous.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1977,11 +2097,15 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_stop.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/stop.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -1994,6 +2118,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -2026,6 +2154,14 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_forward.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/forward.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_play.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/play.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_design_text_input_start_icon.xml.flat",
@@ -2076,6 +2212,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_mtrl_error.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/mtrl_error.xml"
     },
@@ -2085,7 +2225,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout-v21/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
@@ -2125,7 +2265,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -2177,7 +2317,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/layout/notification_action_tombstone.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2186,6 +2326,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_bootsplash_logo.png.flat",
         "source": "/Users/hackerj/workspace/lyfer/android/app/src/main/res/mipmap-xhdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_rewind.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/rewind.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat",
@@ -2245,7 +2389,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector_colored.xml.flat",
@@ -2262,6 +2406,10 @@
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_test_toolbar_custom_background.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/layout/test_toolbar_custom_background.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
@@ -2344,6 +2492,10 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_forward.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/forward.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/layout/abc_dialog_title_material.xml"
     },
@@ -2376,12 +2528,20 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_rewind.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/rewind.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/bc8dc435b9a736a095a262fe740c6af0/media-1.1.0/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
@@ -2397,7 +2557,7 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -2469,15 +2629,27 @@
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_previous.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/previous.png"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_rewind.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/rewind.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable/notification_tile_bg.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_previous.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/previous.png"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable/notification_bg.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -2492,8 +2664,12 @@
         "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/animator/mtrl_chip_state_list_anim.xml"
     },
     {
+        "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_next.png.flat",
+        "source": "/Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/next.png"
+    },
+    {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
-        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/drawable-v21/notification_action_background.xml"
+        "source": "/Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/Users/hackerj/workspace/lyfer/android/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
