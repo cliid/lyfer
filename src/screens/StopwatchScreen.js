@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PureComponent} from 'react';
 import {
   View,
   Text,
@@ -8,6 +8,23 @@ import {
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
 import TimeFormatter from 'minutes-seconds-milliseconds';
+
+class Item extends PureComponent {
+  render() {
+    return (
+      <View style={styles.lapRow}>
+        <View style={styles.lapStyle}>
+          <View style={styles.lapBoxStyle} />
+          <Text style={styles.lapNumber}>{this.props.index + 1}</Text>
+        </View>
+        <View style={styles.lapStyle}>
+          <Text style={styles.lapTime}>{TimeFormatter(this.props.item)}</Text>
+        </View>
+      </View>
+    );
+  }
+}
+
 class Stopwatch extends Component {
   constructor(props) {
     super(props);
@@ -127,17 +144,7 @@ class Stopwatch extends Component {
     return index.toString();
   }
   renderItem({item, index}) {
-    return (
-      <View style={styles.lapRow}>
-        <View style={styles.lapStyle}>
-          <View style={styles.lapBoxStyle} />
-          <Text style={styles.lapNumber}>{index + 1}</Text>
-        </View>
-        <View style={styles.lapStyle}>
-          <Text style={styles.lapTime}>{TimeFormatter(item)}</Text>
-        </View>
-      </View>
-    );
+    return <Item item={item} index={index} />;
   }
   render() {
     return (

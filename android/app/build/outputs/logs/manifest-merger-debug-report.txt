@@ -1,6 +1,5 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
 ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:1-35:12
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:1-35:12
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:1-35:12
@@ -73,104 +72,30 @@ MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/hackerj/.gradle/caches/
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-=======
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-MERGED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bd2cab46fd45b530a274001375333ead\flipper-network-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\dd7dfafbb0af41b4347f18654ea5c436\flipper-fresco-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
-MERGED from [:react-native-community_masked-view] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-bootsplash] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-bootsplash\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-34:12
-MERGED from [:react-native-vector-icons] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7c46e57f036e5a0c70072397f4d30258\jetified-react-native-0.63.3\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [org.webkit:android-jsc:r245459] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6dd6245206e34676e1ee3aa6ee0f68c9\android-jsc-r245459\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40741ffe3de6a11d99116b4e82d60d46\flipper-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\03aa51752e7d7098a02114b07907dabd\stetho-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e9f56679cbe795a6f7c93e9a035f66f2\fresco-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\559ddc4b7f576fedc63e05921b88e895\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0288f1bca211d259126211029f92054c\drawee-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\766471e6648d662c31b10c1bbc5126fe\nativeimagefilters-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\57a87fccccbdbe36e69f72b01ce521f1\memory-type-native-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0abe31decb23fc939dbab3bf21d1ccec\memory-type-java-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b508a8e13388bdc4e88ee330cec4cdc\imagepipeline-native-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\104429b66e46c675401dada578683150\memory-type-ashmem-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\fe90bfac000734a7d0d9c150b7915ff6\imagepipeline-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\34efa7b8fb78d46cf2b753de7fbfc5a5\nativeimagetranscoder-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\237bbc58c0787eee6b78f947e2baeeaa\imagepipeline-base-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\65f592cbf7e10992754db73be6c6ba25\soloader-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\28888a6f6660db47b3788df392c672a7\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\efb592adf2592d134c27edc4a56e19d2\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\d59ca33161f7e2af830510ea3d4e8cb9\jetified-glide-4.7.1\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\8cd6316737e8f518184be95be51b9ee8\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37aaca75d3d19faa6fb296103cea95d8\fragment-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c062602fe4e1f75f724363688044d993\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bc8dc435b9a736a095a262fe740c6af0\media-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c99af001058cd5265376dded8456f828\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40f1c5d439eea30faeaafe93e7bdf45f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\faa15558a5d57e35e462c9e1f0248694\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\89bcabef273c834c0566b445ed28172c\activity-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4300f0cd89d6453d731712a999b6e53f\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e0a79d4379c4eef3803202a497c19313\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\820068d4be612586a05a9daff9be7b77\transition-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6bd464ed06f075f4e42b3fde6a89e60a\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:17:1-26:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f4d3824366bf08c359ca972da7a5f92c\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\db36fbbf4470b1ce63fe644e40ae81d3\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\304e6293e0820147023aa187c0f862e1\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7ce8a2eb9e81825ec9bcc373c597a746\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b100dfff607cf6d99320e31f8c45fcba\jetified-gifdecoder-4.7.1\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\124ee19a63f3e171c196264ecc845daa\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4ce17f8b4390b23da9bedc3cee010ec1\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4da6ddd3c71dbaec92b0fdf3bbca4ce7\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2ef959591ee3dfd7e7d0f130ebacb270\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f8a1cd50432e9295b429e8ecd29f3f06\jetified-fbcore-2.2.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:2:1-8:12
->>>>>>> 5c53f2fa31e878f4b94ca8ec29ccd92bb08bf2d8
 	package
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:2:3-30
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:2:3-30
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:3:5-51
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:1-35:12
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:15:5-67
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:15:5-67
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-<<<<<<< HEAD
 ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
 MERGED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
 MERGED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
@@ -192,91 +117,69 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hack
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/2786c84c1e653e40bd67508414ca298f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/d61b5835a4bddf096218c167e3cfa01b/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/d61b5835a4bddf096218c167e3cfa01b/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
-=======
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:6:5-33:19
-MERGED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:6:5-33:19
-MERGED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:6:5-33:19
-MERGED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-32:19
-MERGED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-32:19
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7c46e57f036e5a0c70072397f4d30258\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7c46e57f036e5a0c70072397f4d30258\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\d59ca33161f7e2af830510ea3d4e8cb9\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\d59ca33161f7e2af830510ea3d4e8cb9\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b100dfff607cf6d99320e31f8c45fcba\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b100dfff607cf6d99320e31f8c45fcba\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
->>>>>>> 5c53f2fa31e878f4b94ca8ec29ccd92bb08bf2d8
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0-beta01] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:8:7-39
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:8:7-39
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:8:7-39
 	tools:ignore
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:7:75-114
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:10:7-46
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:10:7-46
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:10:7-46
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:10:7-46
 	tools:targetApi
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:7:54-74
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:9:7-41
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:9:7-41
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:9:7-41
 	android:allowBackup
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:11:7-34
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:11:7-34
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:12:7-38
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:12:7-38
 	android:usesCleartextTraffic
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:7:18-53
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:7:7-38
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:7:7-38
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:7:7-38
 activity#org.jitcijk.lyfer.MainActivity
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:13:7-20:18
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:13:7-20:18
 	android:label
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:15:9-41
 	android:launchMode
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:17:9-40
 	android:windowSoftInputMode
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:18:9-51
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:18:9-51
 	android:exported
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:19:9-32
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:19:9-32
 	android:configChanges
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:16:9-86
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:16:9-86
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:14:9-37
 activity#com.zoontek.rnbootsplash.RNBootSplashActivity
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:23:9-31:20
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:23:9-31:20
 	android:launchMode
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:26:17-48
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:26:17-48
 	android:theme
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:25:17-49
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:25:17-49
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:24:17-77
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:24:17-77
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:27:13-30:29
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:29:27-74
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:32:7-84
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:32:7-84
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:32:17-81
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:32:17-81
 uses-sdk
-<<<<<<< HEAD
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
@@ -410,180 +313,47 @@ MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/hackerj/.gradle/caches/
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/c114d4501470930b3986c4f9bd2da0fd/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
-=======
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bd2cab46fd45b530a274001375333ead\flipper-network-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bd2cab46fd45b530a274001375333ead\flipper-network-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\dd7dfafbb0af41b4347f18654ea5c436\flipper-fresco-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\dd7dfafbb0af41b4347f18654ea5c436\flipper-fresco-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
-MERGED from [:react-native-community_masked-view] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-bootsplash] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-bootsplash\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-bootsplash] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-bootsplash\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7c46e57f036e5a0c70072397f4d30258\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7c46e57f036e5a0c70072397f4d30258\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [org.webkit:android-jsc:r245459] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6dd6245206e34676e1ee3aa6ee0f68c9\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6dd6245206e34676e1ee3aa6ee0f68c9\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40741ffe3de6a11d99116b4e82d60d46\flipper-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40741ffe3de6a11d99116b4e82d60d46\flipper-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\03aa51752e7d7098a02114b07907dabd\stetho-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\03aa51752e7d7098a02114b07907dabd\stetho-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e9f56679cbe795a6f7c93e9a035f66f2\fresco-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e9f56679cbe795a6f7c93e9a035f66f2\fresco-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\559ddc4b7f576fedc63e05921b88e895\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\559ddc4b7f576fedc63e05921b88e895\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0288f1bca211d259126211029f92054c\drawee-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0288f1bca211d259126211029f92054c\drawee-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\766471e6648d662c31b10c1bbc5126fe\nativeimagefilters-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\766471e6648d662c31b10c1bbc5126fe\nativeimagefilters-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\57a87fccccbdbe36e69f72b01ce521f1\memory-type-native-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\57a87fccccbdbe36e69f72b01ce521f1\memory-type-native-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0abe31decb23fc939dbab3bf21d1ccec\memory-type-java-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0abe31decb23fc939dbab3bf21d1ccec\memory-type-java-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b508a8e13388bdc4e88ee330cec4cdc\imagepipeline-native-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b508a8e13388bdc4e88ee330cec4cdc\imagepipeline-native-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\104429b66e46c675401dada578683150\memory-type-ashmem-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\104429b66e46c675401dada578683150\memory-type-ashmem-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\fe90bfac000734a7d0d9c150b7915ff6\imagepipeline-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\fe90bfac000734a7d0d9c150b7915ff6\imagepipeline-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\34efa7b8fb78d46cf2b753de7fbfc5a5\nativeimagetranscoder-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\34efa7b8fb78d46cf2b753de7fbfc5a5\nativeimagetranscoder-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\237bbc58c0787eee6b78f947e2baeeaa\imagepipeline-base-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\237bbc58c0787eee6b78f947e2baeeaa\imagepipeline-base-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\65f592cbf7e10992754db73be6c6ba25\soloader-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\65f592cbf7e10992754db73be6c6ba25\soloader-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\28888a6f6660db47b3788df392c672a7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\28888a6f6660db47b3788df392c672a7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\efb592adf2592d134c27edc4a56e19d2\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\efb592adf2592d134c27edc4a56e19d2\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\d59ca33161f7e2af830510ea3d4e8cb9\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\d59ca33161f7e2af830510ea3d4e8cb9\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\8cd6316737e8f518184be95be51b9ee8\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\8cd6316737e8f518184be95be51b9ee8\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37aaca75d3d19faa6fb296103cea95d8\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\37aaca75d3d19faa6fb296103cea95d8\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c062602fe4e1f75f724363688044d993\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c062602fe4e1f75f724363688044d993\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bc8dc435b9a736a095a262fe740c6af0\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\bc8dc435b9a736a095a262fe740c6af0\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c99af001058cd5265376dded8456f828\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c99af001058cd5265376dded8456f828\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40f1c5d439eea30faeaafe93e7bdf45f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\40f1c5d439eea30faeaafe93e7bdf45f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\faa15558a5d57e35e462c9e1f0248694\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\faa15558a5d57e35e462c9e1f0248694\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\89bcabef273c834c0566b445ed28172c\activity-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\89bcabef273c834c0566b445ed28172c\activity-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4300f0cd89d6453d731712a999b6e53f\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4300f0cd89d6453d731712a999b6e53f\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e0a79d4379c4eef3803202a497c19313\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\e0a79d4379c4eef3803202a497c19313\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\820068d4be612586a05a9daff9be7b77\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\820068d4be612586a05a9daff9be7b77\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6bd464ed06f075f4e42b3fde6a89e60a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\6bd464ed06f075f4e42b3fde6a89e60a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f4d3824366bf08c359ca972da7a5f92c\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f4d3824366bf08c359ca972da7a5f92c\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\db36fbbf4470b1ce63fe644e40ae81d3\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\db36fbbf4470b1ce63fe644e40ae81d3\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\304e6293e0820147023aa187c0f862e1\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\304e6293e0820147023aa187c0f862e1\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7ce8a2eb9e81825ec9bcc373c597a746\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\7ce8a2eb9e81825ec9bcc373c597a746\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b100dfff607cf6d99320e31f8c45fcba\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\b100dfff607cf6d99320e31f8c45fcba\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\124ee19a63f3e171c196264ecc845daa\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\124ee19a63f3e171c196264ecc845daa\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4ce17f8b4390b23da9bedc3cee010ec1\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4ce17f8b4390b23da9bedc3cee010ec1\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4da6ddd3c71dbaec92b0fdf3bbca4ce7\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\4da6ddd3c71dbaec92b0fdf3bbca4ce7\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2ef959591ee3dfd7e7d0f130ebacb270\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\2ef959591ee3dfd7e7d0f130ebacb270\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f8a1cd50432e9295b429e8ecd29f3f06\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\f8a1cd50432e9295b429e8ecd29f3f06\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
->>>>>>> 5c53f2fa31e878f4b94ca8ec29ccd92bb08bf2d8
 	android:targetSdkVersion
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:5:5-77
+ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:5:22-75
+		ADDED from /Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:5-76
+ADDED from [com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:22-73
+		ADDED from [com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-65
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-65
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
 	android:name
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
 service#com.guichaguri.trackplayer.service.MusicService
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-24:19
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-24:19
 	android:enabled
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-35
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-35
 	android:exported
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-36
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-75
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-75
 intent-filter#action:name:android.intent.action.MEDIA_BUTTON
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-23:29
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
 action#android.intent.action.MEDIA_BUTTON
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-77
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-74
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
 receiver#androidx.media.session.MediaButtonReceiver
-ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-31:20
+ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:20
 	android:name
-		ADDED from [:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:19-76
+		ADDED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:5-79
+ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/6bbbd6ee3e7fbcbd8373d65fb8c3d5a0/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:22-76
+		ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/6bbbd6ee3e7fbcbd8373d65fb8c3d5a0/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:22-76
