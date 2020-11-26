@@ -1,9 +1,14 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, {useState} from 'react';
+import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import {useTheme} from '@react-navigation/native';
+import RNDateTimePicker from '@react-native-community/datetimepicker';
 
 function TimerScreen() {
   const {colors} = useTheme();
+
+  const [time, setTime] = useState(new Date());
+  const [show, setShow] = useState(false);
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -13,21 +18,34 @@ function TimerScreen() {
     },
     time: {
       fontSize: 50,
+      fontFamily: 'CircularStd-Medium',
       textAlign: 'center',
       color: colors.text,
       margin: 10,
     },
   });
 
-  const state = {
-    timerOn: false,
-    timerStart: 0,
-    timerTime: 0,
+  const onChange = (event, selectedTime) => {
+    setTime(selectedTime);
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.time}>TimerScreen</Text>
+      <TouchableHighlight
+        onPress={() => {
+          setShow(!show);
+          console.error(show);
+        }}>
+        <Text>Press Me!</Text>
+      </TouchableHighlight>
+      {show && (
+        <RNDateTimePicker
+          value={time}
+          mode="time"
+          display="spinner"
+          onChange={onChange}
+        />
+      )}
     </View>
   );
 }

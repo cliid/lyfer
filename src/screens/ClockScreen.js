@@ -8,7 +8,7 @@ import StopwatchScreen from './StopwatchScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 
-function TimeScreen() {
+function ClockScreen() {
   const {colors} = useTheme();
   return (
     <Tab.Navigator
@@ -34,4 +34,4 @@ function TimeScreen() {
     </Tab.Navigator>
   );
 }
-export default TimeScreen;
+export default ClockScreen;

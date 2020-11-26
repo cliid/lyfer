@@ -39,7 +39,7 @@ export function DrawerContent(props) {
                 size={size}
               />
             )}
-            label="Time"
+            label="Clock"
             labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Clock');

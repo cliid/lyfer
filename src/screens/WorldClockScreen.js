@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Text} from 'react-native-paper';
 
-function ClockScreen() {
-  const [curTime, setCurTime] = useState();
+function WorldClockScreen() {
+  const [curTime, setCurTime] = useState('00:00:00');
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -12,13 +12,14 @@ function ClockScreen() {
     },
     time: {
       fontSize: 50,
+      fontFamily: 'CircularStd-Medium',
       textAlign: 'center',
       margin: 10,
     },
   });
 
   useEffect(() => {
-    setInterval(() => setCurTime(new Date().toTimeString().split(' ')[0]), 10);
+    setInterval(() => setCurTime(new Date().toTimeString().split(' ')[0]), 1);
   }, []);
 
   return (
@@ -28,4 +29,4 @@ function ClockScreen() {
   );
 }
 
-export default ClockScreen;
+export default WorldClockScreen;

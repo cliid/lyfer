@@ -64,7 +64,7 @@ class Stopwatch extends Component {
         mainTimer: t - this.state.mainTimerStart + mainTimer,
         lapTimer: t - this.state.lapTimerStart + lapTimer,
       });
-    }, 1);
+    }, 10);
   }
   _renderTimers() {
     const {theme} = this.props;
@@ -129,11 +129,11 @@ class Stopwatch extends Component {
   renderItem({item, index}) {
     return (
       <View style={styles.lapRow}>
-        <View style={{width: '40%', flexDirection: 'row'}}>
-          <View style={{flexDirection: 'row', flex: 1}} />
+        <View style={styles.lapStyle}>
+          <View style={styles.lapBoxStyle} />
           <Text style={styles.lapNumber}>{index + 1}</Text>
         </View>
-        <View style={{width: '40%', flexDirection: 'row'}}>
+        <View style={styles.lapStyle}>
           <Text style={styles.lapTime}>{TimeFormatter(item)}</Text>
         </View>
       </View>
@@ -225,6 +225,14 @@ const styles = StyleSheet.create({
   },
   lapResetBtn: {
     fontFamily: 'CircularStd-Book',
+  },
+  lapStyle: {
+    width: '40%',
+    flexDirection: 'row',
+  },
+  lapBoxStyle: {
+    flexDirection: 'row',
+    flex: 1,
   },
 });
 export default function StopwatchScreen(props) {

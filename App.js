@@ -18,7 +18,7 @@ import {DrawerContent} from './src/DrawerContent';
 
 import MusicScreen from './src/screens/MusicScreen';
 import CalculatorScreen from './src/screens/CalculatorScreen';
-import TimeScreen from './src/screens/TimeScreen';
+import ClockScreen from './src/screens/ClockScreen';
 import PlannerScreen from './src/screens/PlannerScreen';
 import AboutScreen from './src/screens/AboutScreen';
 
@@ -26,7 +26,7 @@ const Drawer = createDrawerNavigator();
 
 const App = () => {
   useEffect(() => {
-    RNBootSplash.hide({fade: false, duration: 1000}); // fade
+    RNBootSplash.hide({fade: true, duration: 1000}); // fade
   }, []);
 
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
@@ -91,9 +91,9 @@ const App = () => {
       <Context.Provider value={context}>
         <NavigationContainer theme={theme}>
           <Drawer.Navigator
-            initialRouteName="Time"
+            initialRouteName="Clock"
             drawerContent={(props) => <DrawerContent {...props} />}>
-            <Drawer.Screen name="Time" component={TimeScreen} />
+            <Drawer.Screen name="Clock" component={ClockScreen} />
             <Drawer.Screen name="Music" component={MusicScreen} />
             <Drawer.Screen name="Calculator" component={CalculatorScreen} />
             <Drawer.Screen name="Planner" component={PlannerScreen} />

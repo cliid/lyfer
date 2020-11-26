@@ -8,6 +8,7 @@ MERGED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.
 MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/bd2cab46fd45b530a274001375333ead/flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-community_datetimepicker] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-community_masked-view] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-bootsplash] /Users/hackerj/workspace/lyfer/node_modules/react-native-bootsplash/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /Users/hackerj/workspace/lyfer/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -98,6 +99,8 @@ application
 ADDED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
 MERGED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
 MERGED from /Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
+MERGED from [:react-native-community_datetimepicker] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
 MERGED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-32:19
 MERGED from [:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-32:19
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/326d1a96e0f451934893d7c5d8e55570/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
@@ -186,6 +189,8 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/hackerj/
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/bd2cab46fd45b530a274001375333ead/flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-community_datetimepicker] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_datetimepicker] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_masked-view] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/hackerj/workspace/lyfer/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-bootsplash] /Users/hackerj/workspace/lyfer/node_modules/react-native-bootsplash/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
