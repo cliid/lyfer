@@ -1,4 +1,4 @@
-#Tue Nov 24 20:53:26 KST 2020
-base.0=/Users/hackerj/workspace/lyfer/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-renamed.0=classes.dex
+#Thu Nov 26 15:14:11 KST 2020
+base.0=C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

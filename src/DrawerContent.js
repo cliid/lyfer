@@ -115,6 +115,20 @@ export function DrawerContent(props) {
               props.navigation.navigate('Planner');
             }}
           />
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons
+                name="alert-circle-outline"
+                color={color}
+                size={size}
+              />
+            )}
+            label="About"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.navigate('About');
+            }}
+          />
         </Drawer.Section>
         <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => toggleTheme()}>

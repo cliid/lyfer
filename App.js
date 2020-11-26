@@ -21,6 +21,7 @@ import StopwatchScreen from './src/screens/StopwatchScreen';
 import TimerScreen from './src/screens/TimerScreen';
 import {DrawerContent} from './src/DrawerContent';
 import PlannerScreen from './src/screens/PlannerScreen';
+import AboutScreen from './src/screens/AboutScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -99,6 +100,7 @@ const App = () => {
             <Drawer.Screen name="Music" component={MusicScreen} />
             <Drawer.Screen name="Calculator" component={CalculatorScreen} />
             <Drawer.Screen name="Planner" component={PlannerScreen} />
+            <Drawer.Screen name="About" component={AboutScreen} />
           </Drawer.Navigator>
         </NavigationContainer>
       </Context.Provider>
