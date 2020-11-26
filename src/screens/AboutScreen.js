@@ -11,7 +11,7 @@ function AboutScreen() {
       alignItems: 'center',
       backgroundColor: colors.background,
     },
-    time: {
+    about: {
       fontSize: 50,
       textAlign: 'center',
       color: colors.text,
@@ -27,7 +27,7 @@ function AboutScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.time}>TimerScreen</Text>
+      <Text style={styles.about}>TimerScreen</Text>
     </View>
   );
 }
