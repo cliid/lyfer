@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 #Thu Nov 26 18:39:33 KST 2020
 base.1=/Users/hackerj/workspace/lyfer/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+=======
+#Thu Nov 26 22:55:13 KST 2020
+path.2=classes.dex
+>>>>>>> 5c53f2fa31e878f4b94ca8ec29ccd92bb08bf2d8
 path.1=classes.dex
-base.0=/Users/hackerj/.gradle/daemon/6.2/C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex
+base.2=C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\hackerj\\workspace\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+base.0=C\:\\Users\\hackerj\\.gradle\\daemon\\6.2\\C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
