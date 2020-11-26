@@ -14,12 +14,11 @@ import {
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import {Context} from './src/components/Context';
-import ClockScreen from './src/screens/ClockScreen';
+import {DrawerContent} from './src/DrawerContent';
+
 import MusicScreen from './src/screens/MusicScreen';
 import CalculatorScreen from './src/screens/CalculatorScreen';
-import StopwatchScreen from './src/screens/StopwatchScreen';
-import TimerScreen from './src/screens/TimerScreen';
-import {DrawerContent} from './src/DrawerContent';
+import TimeScreen from './src/screens/TimeScreen';
 import PlannerScreen from './src/screens/PlannerScreen';
 import AboutScreen from './src/screens/AboutScreen';
 
@@ -92,11 +91,9 @@ const App = () => {
       <Context.Provider value={context}>
         <NavigationContainer theme={theme}>
           <Drawer.Navigator
-            initialRouteName="Clock"
+            initialRouteName="Time"
             drawerContent={(props) => <DrawerContent {...props} />}>
-            <Drawer.Screen name="Clock" component={ClockScreen} />
-            <Drawer.Screen name="Timer" component={TimerScreen} />
-            <Drawer.Screen name="Stopwatch" component={StopwatchScreen} />
+            <Drawer.Screen name="Time" component={TimeScreen} />
             <Drawer.Screen name="Music" component={MusicScreen} />
             <Drawer.Screen name="Calculator" component={CalculatorScreen} />
             <Drawer.Screen name="Planner" component={PlannerScreen} />

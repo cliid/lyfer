@@ -39,38 +39,10 @@ export function DrawerContent(props) {
                 size={size}
               />
             )}
-            label="Clock"
+            label="Time"
             labelStyle={{fontFamily: 'CircularStd-Medium'}}
             onPress={() => {
               props.navigation.navigate('Clock');
-            }}
-          />
-          <DrawerItem
-            icon={({color, size}) => (
-              <MaterialCommunityIcons
-                name="av-timer"
-                color={color}
-                size={size}
-              />
-            )}
-            label="Timer"
-            labelStyle={{fontFamily: 'CircularStd-Medium'}}
-            onPress={() => {
-              props.navigation.navigate('Timer');
-            }}
-          />
-          <DrawerItem
-            icon={({color, size}) => (
-              <MaterialCommunityIcons
-                name="timer-outline"
-                color={color}
-                size={size}
-              />
-            )}
-            label="Stopwatch"
-            labelStyle={{fontFamily: 'CircularStd-Medium'}}
-            onPress={() => {
-              props.navigation.navigate('Stopwatch');
             }}
           />
           <DrawerItem

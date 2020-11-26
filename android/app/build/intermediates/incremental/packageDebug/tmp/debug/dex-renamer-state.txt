@@ -1,4 +1,7 @@
-#Thu Nov 26 15:14:11 KST 2020
-base.0=C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
+#Thu Nov 26 16:51:20 KST 2020
+base.1=/Users/hackerj/workspace/lyfer/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.1=classes.dex
+base.0=/Users/hackerj/.gradle/daemon/6.2/C\:\\Users\\Shio\\Desktop\\Shio P\\Github\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+path.0=classes.dex
