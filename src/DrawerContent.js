@@ -101,6 +101,20 @@ export function DrawerContent(props) {
               props.navigation.navigate('Calculator');
             }}
           />
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons
+                name="order-bool-ascending-variant"
+                color={color}
+                size={size}
+              />
+            )}
+            label="Planner"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.navigate('Planner');
+            }}
+          />
         </Drawer.Section>
         <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => toggleTheme()}>

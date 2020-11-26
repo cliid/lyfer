@@ -12,13 +12,15 @@ import {
   DarkTheme as NavigationDarkTheme,
 } from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+
+import {Context} from './src/components/Context';
 import ClockScreen from './src/screens/ClockScreen';
 import MusicScreen from './src/screens/MusicScreen';
 import CalculatorScreen from './src/screens/CalculatorScreen';
 import StopwatchScreen from './src/screens/StopwatchScreen';
 import TimerScreen from './src/screens/TimerScreen';
 import {DrawerContent} from './src/DrawerContent';
-import {Context} from './src/components/Context';
+import PlannerScreen from './src/screens/PlannerScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -96,6 +98,7 @@ const App = () => {
             <Drawer.Screen name="Stopwatch" component={StopwatchScreen} />
             <Drawer.Screen name="Music" component={MusicScreen} />
             <Drawer.Screen name="Calculator" component={CalculatorScreen} />
+            <Drawer.Screen name="Planner" component={PlannerScreen} />
           </Drawer.Navigator>
         </NavigationContainer>
       </Context.Provider>

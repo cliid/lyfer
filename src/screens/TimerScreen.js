@@ -19,6 +19,12 @@ function TimerScreen() {
     },
   });
 
+  const state = {
+    timerOn: false,
+    timerStart: 0,
+    timerTime: 0,
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.time}>TimerScreen</Text>
