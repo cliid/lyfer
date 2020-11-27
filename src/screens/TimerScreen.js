@@ -2,74 +2,147 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import RNDateTimePicker from '@react-native-community/datetimepicker';
-import TimeFormatter from 'minutes-seconds-milliseconds';
+import {msToHHMMSS} from '../util/time-formatter';
 
 function TimerScreen() {
   const {colors} = useTheme();
 
   const [isRunning, setIsRunning] = useState(false);
   const [isTimeSet, setIsTimeSet] = useState(false);
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(new Date(0));
   const [show, setShow] = useState(false);
 
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: colors.background,
-    },
-    time: {
-      fontSize: 50,
-      fontFamily: 'CircularStd-Medium',
-      textAlign: 'center',
-      color: colors.text,
-      margin: 10,
-    },
-  });
-
   const onChange = (event, selectedTime) => {
-    setTime(selectedTime);
+    if (event.type === 'set') {
+      setTime(selectedTime);
+      setShow(false);
+      setIsTimeSet(true);
+    } else if (event.type === 'dismissed') {
+      setShow(false);
+    }
   };
 
+  function clickTime() {
+    setShow(true);
+  }
   function clickStartBtn() {
-    if(!isTimeSet) {
+    if (!isTimeSet) {
       setShow(true);
-      return;
+    } else {
+      if (!isRunning) {
+        change();
+      }
     }
-    if (!isRunning)
-      change();
   }
 
   function clickStopBtn() {
+    clearInterval(this.interval);
     setIsRunning(false);
   }
   function change() {
-    if(isTimeSet) {
+    if (isTimeSet) {
       if (time > 0) {
         setInterval(() => {
           setTime(time - 10);
+          console.log(time);
         }, 10);
-        return;
+      } else {
+        console.log('timer done');
       }
-      alert('done');
     }
   }
 
+  function _renderTimer() {
+    return (
+      <View style={[styles.timerWrapper, {backgroundColor: colors.background}]}>
+        <TouchableHighlight
+          underlayColor={colors.background}
+          onPress={clickTime}
+          style={styles.time}>
+          <Text style={[styles.time, {color: colors.text}]}>
+            {msToHHMMSS(time)}
+          </Text>
+        </TouchableHighlight>
+        {show && (
+          <RNDateTimePicker
+            value={time}
+            mode="time"
+            display="spinner"
+            onChange={onChange}
+          />
+        )}
+      </View>
+    );
+  }
+
+  function _renderButtons() {
+    return (
+      <View style={styles.buttonWrapper}>
+        <TouchableHighlight
+          underlayColor={colors.disabled}
+          onPress={clickStartBtn}
+          style={[styles.button, {backgroundColor: colors.background}]}>
+          <Text style={[styles.startBtn, {color: colors.text}]}>Start</Text>
+        </TouchableHighlight>
+        <TouchableHighlight
+          underlayColor={colors.disabled}
+          onPress={clickStopBtn}
+          style={[styles.button, {backgroundColor: colors.background}]}>
+          <Text style={[styles.stopBtn, {color: colors.text}]}>Stop</Text>
+        </TouchableHighlight>
+      </View>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      {show && (
-        <RNDateTimePicker
-          value={time}
-          mode="time"
-          display="spinner"
-          onChange={onChange}
-        />
-      )}
-      <TouchableHighlight onPress={clickStartBtn} >Start</TouchableHighlight>
-      <TouchableHighlight onPress={clickStopBtn} >Stop</TouchableHighlight>
+    <View style={[styles.container, {backgroundColor: colors.background}]}>
+      <View style={styles.top}>{_renderTimer()}</View>
+      <View style={styles.bottom}>{_renderButtons()}</View>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  timerWrapper: {
+    justifyContent: 'center',
+    flex: 1,
+  },
+  top: {
+    flex: 1,
+  },
+  bottom: {
+    flex: 1,
+  },
+
+  time: {
+    fontSize: 50,
+    fontFamily: 'CircularStd-Medium',
+    textAlign: 'center',
+  },
+
+  buttonWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  button: {
+    height: 80,
+    width: 80,
+    borderRadius: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 0.5,
+  },
+  startBtn: {
+    color: '#0C0',
+    fontFamily: 'CircularStd-Book',
+  },
+  stopBtn: {
+    color: '#C00',
+    fontFamily: 'CircularStd-Book',
+  },
+});
 
 export default TimerScreen;

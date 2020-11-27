@@ -7,18 +7,28 @@ import {
   FlatList,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
-import TimeFormatter from 'minutes-seconds-milliseconds';
+import {msToTime} from '../util/time-formatter';
 
-class Item extends PureComponent {
+function Item(props) {
+  const theme = useTheme();
+
+  return <ItemClass {...props} theme={theme} />;
+}
+class ItemClass extends PureComponent {
   render() {
+    const {theme} = this.props;
     return (
       <View style={styles.lapRow}>
         <View style={styles.lapStyle}>
           <View style={styles.lapBoxStyle} />
-          <Text style={styles.lapNumber}>{this.props.index + 1}</Text>
+          <Text style={[styles.lapNumber, {color: theme.colors.text}]}>
+            {this.props.index + 1}
+          </Text>
         </View>
         <View style={styles.lapStyle}>
-          <Text style={styles.lapTime}>{TimeFormatter(this.props.item)}</Text>
+          <Text style={[styles.lapTime, {color: theme.colors.text}]}>
+            {msToTime(this.props.item)}
+          </Text>
         </View>
       </View>
     );
@@ -93,11 +103,11 @@ class Stopwatch extends Component {
         ]}>
         <View style={styles.timerWrapperInner}>
           <Text style={[styles.lapTimer, {color: theme.colors.text}]}>
-            {TimeFormatter(this.state.lapTimer)}
+            {msToTime(this.state.lapTimer)}
           </Text>
 
           <Text style={[styles.mainTimer, {color: theme.colors.text}]}>
-            {TimeFormatter(this.state.mainTimer)}
+            {msToTime(this.state.mainTimer)}
           </Text>
         </View>
       </View>
@@ -130,8 +140,9 @@ class Stopwatch extends Component {
     );
   }
   _renderLaps() {
+    const {theme} = this.props;
     return (
-      <View style={styles.lapsWrapper}>
+      <View style={{backgroundColor: theme.colors.card}}>
         <FlatList
           data={this.state.laps}
           renderItem={this.renderItem}
@@ -147,10 +158,13 @@ class Stopwatch extends Component {
     return <Item item={item} index={index} />;
   }
   render() {
+    const {theme} = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.top}>{this._renderTimers()}</View>
-        <View style={styles.middle}>{this._renderButtons()}</View>
+        <View style={[styles.middle, {backgroundColor: theme.colors.card}]}>
+          {this._renderButtons()}
+        </View>
         <View style={styles.bottom}>{this._renderLaps()}</View>
       </View>
     );
@@ -167,13 +181,12 @@ const styles = StyleSheet.create({
   },
   middle: {
     flex: 1,
-    backgroundColor: '#F0EFF5',
   },
   bottom: {
     flex: 2,
   },
   mainTimer: {
-    fontSize: 50,
+    fontSize: 45,
     fontFamily: 'CircularStd-Medium',
     alignSelf: 'center',
   },
@@ -195,7 +208,7 @@ const styles = StyleSheet.create({
     height: 80,
     width: 80,
     borderRadius: 40,
-    backgroundColor: '#FFF',
+    borderWidth: 0.5,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -209,12 +222,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     fontSize: 16,
     fontFamily: 'CircularStd-Book',
-    color: '#777',
-    flex: 1,
+    flex: 1.5,
   },
   lapTime: {
     flexDirection: 'row',
-    color: '#000',
     fontSize: 20,
     fontFamily: 'CircularStd-Book',
     flex: 1,
@@ -228,13 +239,13 @@ const styles = StyleSheet.create({
     fontFamily: 'CircularStd-Book',
   },
   lapsWrapper: {
-    backgroundColor: '#ddd',
+    backgroundColor: '#fff',
   },
   lapResetBtn: {
     fontFamily: 'CircularStd-Book',
   },
   lapStyle: {
-    width: '40%',
+    width: '50%',
     flexDirection: 'row',
   },
   lapBoxStyle: {
