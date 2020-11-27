@@ -8,9 +8,7 @@ function AboutScreen() {
   return (
     <View style={[styles.container, {backgroundColor: colors.background}]}>
       <View style={[styles.centerText, {backgroundColor: colors.background}]}>
-        <Text style={[styles.about, {color: colors.text}]}>
-          Made with ❤ by:
-        </Text>
+        <Text style={[styles.about, {color: colors.text}]}>Made with ❤ by</Text>
         <Text style={[styles.about, {color: colors.text}]}>cliid & Shio.</Text>
       </View>
       <View

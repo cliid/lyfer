@@ -12,6 +12,8 @@ function TimerScreen() {
   const [time, setTime] = useState(new Date(0));
   const [show, setShow] = useState(false);
 
+  let interval;
+
   const onChange = (event, selectedTime) => {
     if (event.type === 'set') {
       setTime(selectedTime);
@@ -35,14 +37,19 @@ function TimerScreen() {
     }
   }
 
-  function clickStopBtn() {
-    clearInterval(this.interval);
+  function clickPauseBtn() {
+    clearInterval(interval);
+    setIsRunning(false);
+  }
+
+  function clickResetBtn() {
+    clearInterval(interval);
     setIsRunning(false);
   }
   function change() {
     if (isTimeSet) {
       if (time > 0) {
-        setInterval(() => {
+        interval = setInterval(() => {
           setTime(time - 10);
           console.log(time);
         }, 10);
@@ -86,9 +93,18 @@ function TimerScreen() {
         </TouchableHighlight>
         <TouchableHighlight
           underlayColor={colors.disabled}
-          onPress={clickStopBtn}
+          onPress={clickPauseBtn}
           style={[styles.button, {backgroundColor: colors.background}]}>
-          <Text style={[styles.stopBtn, {color: colors.text}]}>Stop</Text>
+          <Text style={[styles.pauseBtn, {color: colors.text}]}>Pause</Text>
+        </TouchableHighlight>
+        <TouchableHighlight
+          underlayColor={colors.disabled}
+          onPress={clickResetBtn}
+          style={[
+            styles.button,
+            {backgroundColor: colors.background, color: colors.text},
+          ]}>
+          <Text style={[styles.resetBtn, {color: colors.text}]}>Reset</Text>
         </TouchableHighlight>
       </View>
     );
@@ -139,8 +155,11 @@ const styles = StyleSheet.create({
     color: '#0C0',
     fontFamily: 'CircularStd-Book',
   },
-  stopBtn: {
+  pauseBtn: {
     color: '#C00',
+    fontFamily: 'CircularStd-Book',
+  },
+  resetBtn: {
     fontFamily: 'CircularStd-Book',
   },
 });
