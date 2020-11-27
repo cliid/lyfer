@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import RNDateTimePicker from '@react-native-community/datetimepicker';
+import TimeFormatter from 'minutes-seconds-milliseconds';
 
 function TimerScreen() {
   const {colors} = useTheme();
 
+  const [isRunning, setIsRunning] = useState(false);
+  const [isTimeSet, setIsTimeSet] = useState(false);
   const [time, setTime] = useState(new Date());
   const [show, setShow] = useState(false);
 
@@ -29,15 +32,32 @@ function TimerScreen() {
     setTime(selectedTime);
   };
 
+  function clickStartBtn() {
+    if(!isTimeSet) {
+      setShow(true);
+      return;
+    }
+    if (!isRunning)
+      change();
+  }
+
+  function clickStopBtn() {
+    setIsRunning(false);
+  }
+  function change() {
+    if(isTimeSet) {
+      if (time > 0) {
+        setInterval(() => {
+          setTime(time - 10);
+        }, 10);
+        return;
+      }
+      alert('done');
+    }
+  }
+
   return (
     <View style={styles.container}>
-      <TouchableHighlight
-        onPress={() => {
-          setShow(!show);
-          console.error(show);
-        }}>
-        <Text>Press Me!</Text>
-      </TouchableHighlight>
       {show && (
         <RNDateTimePicker
           value={time}
@@ -46,6 +66,8 @@ function TimerScreen() {
           onChange={onChange}
         />
       )}
+      <TouchableHighlight onPress={clickStartBtn} >Start</TouchableHighlight>
+      <TouchableHighlight onPress={clickStopBtn} >Stop</TouchableHighlight>
     </View>
   );
 }
