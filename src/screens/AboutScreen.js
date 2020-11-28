@@ -1,32 +1,34 @@
 import React from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import {useTheme} from '@react-navigation/native';
-import {ScrollView} from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native-gesture-handler';
 
-import Slide from '../util/AboutSlide';
+import aboutSlide from "../util/AboutSlide"
 
 function AboutScreen() {
   const {colors} = useTheme();
 
   return (
     <View style={styles.container}>
-      <View style={styles.slider}>
-        <ScrollView
-          horizontal
-          snapToInterval={width}
-          decelerationRate="fast"
-          showsHorizontalScrollIndicator={false}
-          bounces={false}>
-          <Slide label="cliid" right={true} />
-          <Slide label="Shio" right={true} />
+      <View style={style.slider}>
+        <ScrollView 
+        horizontal 
+        snapToInterval={width} 
+        decelerationRate="fast" 
+        showsHorizontalScrollIndicator={false} 
+        bounces={false}
+        >
+          <Slide label="Cliid" right/>
+          <Slide label="Shio" right/>
         </ScrollView>
       </View>
-      <View style={styles.footer} />
+      <View style={styles.footer}>
+      </View>
     </View>
   );
 }
 
-const {width, height} = Dimensions.get('window');
+const {width, height} = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
