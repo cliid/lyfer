@@ -1,10 +1,6 @@
 import React from "react";
-import { View, Text, Dimensions, StyleSheet} from "react-native";
+import { View } from "react-native";
 
-const {width} = Dimensions.get("window");
-const style = StyleSheet.create({
-    container: {},
-})
 interface SlideProps {
     label: string;
     right?: boolean;
@@ -18,4 +14,4 @@ const aboutSlide = ({label, right}: SlideProps) => {
     );
 };
 
-export default aboutSlide
+export default aboutslide
