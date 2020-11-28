@@ -9,103 +9,103 @@
 9        android:targetSdkVersion="29" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:5:5-77
-11-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:5:22-75
+11-->/Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:4:5-67
-12-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:4:22-64
+12-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.54.0] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
 14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
-14-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-65
+14-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+14-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-65
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-15-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
-15-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
+15-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
+15-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-74
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:5-79
-16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\c741cfd6c5fca9fbee7605157609078b\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:22-76
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/6bbbd6ee3e7fbcbd8373d65fb8c3d5a0/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:5-79
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/6bbbd6ee3e7fbcbd8373d65fb8c3d5a0/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:22-76
 17
 18    <application
-18-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:6:5-33:19
+18-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:6:5-33:19
 19        android:name="org.jitcijk.lyfer.MainApplication"
-19-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:7:7-38
+19-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:7:7-38
 20        android:allowBackup="false"
-20-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:11:7-34
+20-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:11:7-34
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.2.0-beta01] C:\Users\Shio\.gradle\caches\transforms-2\files-2.1\0dfbfccd881ef79419407cc1a91e9d97\core-1.2.0-beta01\AndroidManifest.xml:24:18-86
+21-->[androidx.core:core:1.2.0-beta01] /Users/hackerj/.gradle/caches/transforms-2/files-2.1/0dfbfccd881ef79419407cc1a91e9d97/core-1.2.0-beta01/AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
-23-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:9:7-41
+23-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:9:7-41
 24        android:label="@string/app_name"
-24-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:8:7-39
+24-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:8:7-39
 25        android:roundIcon="@mipmap/ic_launcher"
-25-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:10:7-46
+25-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:10:7-46
 26        android:theme="@style/AppTheme"
-26-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:12:7-38
+26-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:12:7-38
 27        android:usesCleartextTraffic="true" >
-27-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\debug\AndroidManifest.xml:7:18-53
+27-->/Users/hackerj/workspace/lyfer/android/app/src/debug/AndroidManifest.xml:7:18-53
 28        <activity
-28-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:13:7-20:18
+28-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:13:7-20:18
 29            android:name="org.jitcijk.lyfer.MainActivity"
-29-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:14:9-37
+29-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:14:9-37
 30            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-30-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:16:9-86
+30-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:16:9-86
 31            android:exported="true"
-31-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:19:9-32
+31-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:19:9-32
 32            android:label="@string/app_name"
-32-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:15:9-41
+32-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:15:9-41
 33            android:launchMode="singleTask"
-33-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:17:9-40
+33-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:17:9-40
 34            android:windowSoftInputMode="adjustResize" >
-34-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:18:9-51
+34-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:18:9-51
 35        </activity> <!-- add the following lines (use the theme you created at step 2) -->
 36        <activity
-36-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:23:9-31:20
+36-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:23:9-31:20
 37            android:name="com.zoontek.rnbootsplash.RNBootSplashActivity"
-37-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:24:17-77
+37-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:24:17-77
 38            android:launchMode="singleTask"
-38-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:26:17-48
+38-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:26:17-48
 39            android:theme="@style/BootTheme" >
-39-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:25:17-49
+39-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:25:17-49
 40            <intent-filter>
-40-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:27:13-30:29
+40-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:27:13-30:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:28:17-69
-41-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:28:25-66
+41-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:28:17-69
+41-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:28:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:29:17-77
-43-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:29:27-74
+43-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:29:17-77
+43-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:29:27-74
 44            </intent-filter>
 45        </activity>
 46        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- The main service, handles playback, playlists and media buttons -->
-46-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:32:7-84
-46-->C:\Users\Shio\Desktop\Shio P\Github\lyfer\android\app\src\main\AndroidManifest.xml:32:17-81
+46-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:32:7-84
+46-->/Users/hackerj/workspace/lyfer/android/app/src/main/AndroidManifest.xml:32:17-81
 47        <service
-47-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-24:19
+47-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-24:19
 48            android:name="com.guichaguri.trackplayer.service.MusicService"
-48-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-75
+48-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-75
 49            android:enabled="true"
-49-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-35
+49-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-35
 50            android:exported="true" >
-50-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-36
+50-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-36
 51            <intent-filter>
-51-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-23:29
+51-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
 52                <action android:name="android.intent.action.MEDIA_BUTTON" />
-52-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-77
-52-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-74
+52-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
+52-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
 53            </intent-filter>
 54        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
 55        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
-55-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-31:20
-55-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:19-76
+55-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:20
+55-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-76
 56            <intent-filter>
-56-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-23:29
+56-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
 57                <action android:name="android.intent.action.MEDIA_BUTTON" />
-57-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-77
-57-->[:react-native-track-player] C:\Users\Shio\Desktop\Shio P\Github\lyfer\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-74
+57-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
+57-->[:react-native-track-player] /Users/hackerj/workspace/lyfer/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
 58            </intent-filter>
 59        </receiver>
 60    </application>
