@@ -1,50 +1,37 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {useTheme} from '@react-navigation/native';
+import { ScrollView } from 'react-native-gesture-handler';
+
+import Slide from "../util/AboutSlide"
 
 function AboutScreen() {
   const {colors} = useTheme();
 
   return (
-    <View style={[styles.container, {backgroundColor: colors.background}]}>
-      <View style={[styles.centerText, {backgroundColor: colors.background}]}>
-        <Text style={[styles.about, {color: colors.text}]}>Made with ❤ by</Text>
-        <Text style={[styles.about, {color: colors.text}]}>cliid & Shio.</Text>
+    <View style={styles.container}>
+      <View style={style.slider}>
+        <ScrollView horizontal snapToInterval={width} decelerationRate="fast">
+          <Slide label="Cliid" right/>
+          <Slide label="Shio" right/>
+        </ScrollView>
       </View>
-      <View
-        style={[
-          styles.jitcijkProductText,
-          {backgroundColor: colors.background},
-        ]}>
-        <Text style={[styles.about, {color: colors.text}]}>
-          A product of Jitcijk Inc.
-        </Text>
+      <View style={styles.footer}>
       </View>
     </View>
   );
 }
 
+const {width} = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  centerText: {
-    flex: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
+  slider: {
+    flex: 0.61,
   },
-  jitcijkProductText: {
+  footer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  about: {
-    fontSize: 20,
-    fontFamily: 'CircularStd-Book',
-    textAlign: 'center',
-    margin: 10,
   },
 });
 
