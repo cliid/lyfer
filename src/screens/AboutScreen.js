@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-import Slide from "../util/AboutSlide"
+import aboutSlide from "../util/AboutSlide"
 
 function AboutScreen() {
   const {colors} = useTheme();
@@ -11,7 +11,13 @@ function AboutScreen() {
   return (
     <View style={styles.container}>
       <View style={style.slider}>
-        <ScrollView horizontal snapToInterval={width} decelerationRate="fast">
+        <ScrollView 
+        horizontal 
+        snapToInterval={width} 
+        decelerationRate="fast" 
+        showsHorizontalScrollIndicator={false} 
+        bounces={false}
+        >
           <Slide label="Cliid" right/>
           <Slide label="Shio" right/>
         </ScrollView>
@@ -22,13 +28,13 @@ function AboutScreen() {
   );
 }
 
-const {width} = Dimensions.get("window");
+const {width, height} = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   slider: {
-    flex: 0.61,
+    height: 0.61 * height,
   },
   footer: {
     flex: 1,

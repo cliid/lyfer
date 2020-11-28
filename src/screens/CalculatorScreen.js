@@ -19,9 +19,6 @@ function CalculatorScreen() {
       margin: 10,
     },
   });
-
-  
-
 }
 
 export default CalculatorScreen;
