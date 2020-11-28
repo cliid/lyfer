@@ -1,111 +1,260 @@
-import React from 'react';
-import {StyleSheet, Text, View, StatusBar, SafeAreaView} from 'react-native';
-import {useTheme} from '@react-navigation/native';
+import React, {Component} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import CalcBtn from '../components/Button';
+import {useTheme} from 'react-native-paper';
 
-function CalculatorScreen() {
-  const [value, onChangeText] = React.useState('Input');
-  const {colors} = useTheme();
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: colors.background,
-    },
-    time: {
-      fontSize: 20,
-      textAlign: 'center',
-      color: colors.text,
-      margin: 10,
-    },
-  });
-
-  state = initialState;
-
-  handleTap = (type, value) => {
-    this.setState((state) => calculator(type, value, state));
+class Calculator extends Component {
+  state = {
+    value: null,
+    displayValue: '0',
+    waitingForOperand: false,
+    operator: null,
+    bts: ' ',
   };
 
-  render();
-  return (
-    <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
-      <SafeAreaView>
-        <Text style={styles.value}>
-          {parseFloat(this.state.currentValue).toLocaleString()}
-        </Text>
-        <Row>
-          <Button
-            text="C"
-            theme="secondary"
-            onPress={() => this.handleTap('clear')}
+  inputDigit = (digit) => {
+    const {displayValue, waitingForOperand} = this.state;
+
+    if (waitingForOperand) {
+      this.setState({
+        displayValue: String(digit),
+        waitingForOperand: false,
+      });
+    } else {
+      this.setState({
+        displayValue:
+          displayValue === '0' ? String(digit) : displayValue + digit,
+      });
+    }
+  };
+
+  inputDot = () => {
+    const {displayValue, waitingForOperand} = this.state;
+
+    if (waitingForOperand) {
+      this.setState({
+        displayValue: '.',
+        waitingForOperand: false,
+      });
+    } else if (displayValue.indexOf('.') === -1) {
+      this.setState({
+        displayValue: displayValue + '.',
+        waitingForOperand: false,
+      });
+    }
+  };
+
+  clearDisplay = () => {
+    this.setState({
+      displayValue: '0',
+      bts: ' ',
+    });
+  };
+
+  toggleSign = () => {
+    const {displayValue} = this.state;
+
+    this.setState({
+      displayValue:
+        displayValue.charAt(0) === '-'
+          ? displayValue.substr(1)
+          : '-' + displayValue,
+    });
+  };
+
+  inputPercent = () => {
+    const {displayValue} = this.state;
+    const value = parseFloat(displayValue);
+    this.setState({
+      displayValue: String(value / 100),
+    });
+  };
+
+  performOperation = (nextOperator) => {
+    const {displayValue, operator, value} = this.state;
+
+    const nextValue = parseFloat(displayValue);
+
+    const operations = {
+      '/': (prevValue, nextValue) => prevValue / nextValue,
+      x: (prevValue, nextValue) => prevValue * nextValue,
+      '+': (prevValue, nextValue) => prevValue + nextValue,
+      '-': (prevValue, nextValue) => prevValue - nextValue,
+      '=': (prevValue, nextValue) => nextValue,
+    };
+
+    if (value == null) {
+      this.setState({
+        value: nextValue,
+      });
+    } else if (operator) {
+      const currentValue = value || 0;
+      const computedValue = operations[operator](currentValue, nextValue);
+
+      this.setState({
+        value: computedValue,
+        displayValue: String(computedValue),
+        bts:
+          operator === '=' ? ' ' : `${currentValue} ${operator} ${nextValue}`,
+      });
+    }
+
+    this.setState({
+      waitingForOperand: true,
+      operator: nextOperator,
+    });
+  };
+
+  render() {
+    const {displayValue} = this.state;
+    const {theme} = this.props;
+    return (
+      <View style={styles.container}>
+        <View style={styles.top}>
+          <Text style={[styles.number, {color: theme.colors.text}]}>
+            {this.state.bts}
+          </Text>
+          <Text style={[styles.bigNumber, {color: theme.colors.text}]}>
+            {displayValue}
+          </Text>
+        </View>
+        <View style={styles.row}>
+          <CalcBtn
+            text="AC"
+            colors={theme.colors}
+            onPress={this.clearDisplay}
           />
-          <Button
-            text="+/-"
-            theme="secondary"
-            onPress={() => this.handleTap('posneg')}
-          />
-          <Button
-            text="%"
-            theme="secondary"
-            onPress={() => this.handleTap('percentage')}
-          />
-          <Button
+          <CalcBtn text="±" colors={theme.colors} onPress={this.toggleSign} />
+          <CalcBtn text="%" colors={theme.colors} onPress={this.inputPercent} />
+          <CalcBtn
             text="/"
-            theme="accent"
-            onPress={() => this.handleTap('operator', '/')}
+            colors={theme.colors}
+            onPress={() => this.performOperation('/')}
           />
-        </Row>
+        </View>
 
-        <Row>
-          <Button text="7" onPress={() => this.handleTap('number', 7)} />
-          <Button text="8" onPress={() => this.handleTap('number', 8)} />
-          <Button text="9" onPress={() => this.handleTap('number', 9)} />
-          <Button
+        <View style={styles.row}>
+          <CalcBtn
+            text="7"
+            onPress={() => this.inputDigit(7)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="8"
+            onPress={() => this.inputDigit(8)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="9"
+            onPress={() => this.inputDigit(9)}
+            colors={theme.colors}
+          />
+          <CalcBtn
             text="x"
-            theme="accent"
-            onPress={() => this.handleTap('operator', '*')}
+            colors={theme.colors}
+            onPress={() => this.performOperation('x')}
           />
-        </Row>
-
-        <Row>
-          <Button text="4" onPress={() => this.handleTap('number', 4)} />
-          <Button text="5" onPress={() => this.handleTap('number', 5)} />
-          <Button text="6" onPress={() => this.handleTap('number', 6)} />
-          <Button
+        </View>
+        <View style={styles.row}>
+          <CalcBtn
+            text="4"
+            onPress={() => this.inputDigit(4)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="5"
+            onPress={() => this.inputDigit(5)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="6"
+            onPress={() => this.inputDigit(6)}
+            colors={theme.colors}
+          />
+          <CalcBtn
             text="-"
-            theme="accent"
-            onPress={() => this.handleTap('operator', '-')}
+            colors={theme.colors}
+            onPress={() => this.performOperation('-')}
           />
-        </Row>
-
-        <Row>
-          <Button text="1" onPress={() => this.handleTap('number', 1)} />
-          <Button text="2" onPress={() => this.handleTap('number', 2)} />
-          <Button text="3" onPress={() => this.handleTap('number', 3)} />
-          <Button
+        </View>
+        <View style={styles.row}>
+          <CalcBtn
+            text="1"
+            onPress={() => this.inputDigit(1)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="2"
+            onPress={() => this.inputDigit(2)}
+            colors={theme.colors}
+          />
+          <CalcBtn
+            text="3"
+            onPress={() => this.inputDigit(3)}
+            colors={theme.colors}
+          />
+          <CalcBtn
             text="+"
-            theme="accent"
-            onPress={() => this.handleTap('operator', '+')}
+            colors={theme.colors}
+            onPress={() => this.performOperation('+')}
           />
-        </Row>
+        </View>
 
-        <Row>
-          <Button
+        <View style={styles.row}>
+          <CalcBtn
             text="0"
-            size="double"
-            onPress={() => this.handleTap('number', 0)}
+            colors={theme.colors}
+            onPress={() => this.inputDigit(0)}
+            isZero
           />
-          <Button text="." onPress={() => this.handleTap('number', '.')} />
-          <Button
+
+          <CalcBtn text="." colors={theme.colors} onPress={this.inputDot} />
+          <CalcBtn
             text="="
-            theme="accent"
-            onPress={() => this.handleTap('equal')}
+            colors={theme.colors}
+            onPress={() => this.performOperation('=')}
           />
-        </Row>
-      </SafeAreaView>
-    </View>
-  );
+        </View>
+      </View>
+    );
+  }
 }
 
-export default CalculatorScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  top: {
+    paddingTop: 50,
+  },
+  bottom: {
+    flex: 1,
+  },
+  row: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  button: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  bigNumber: {
+    textAlign: 'right',
+    padding: 10,
+    fontSize: 45,
+    fontFamily: 'CircularStd-Book',
+  },
+  number: {
+    textAlign: 'right',
+    padding: 10,
+    fontSize: 25,
+    fontFamily: 'CircularStd-Book',
+  },
+});
+
+export default function CalculatorScreen(props) {
+  const theme = useTheme();
+
+  return <Calculator {...props} theme={theme} />;
+}
