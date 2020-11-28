@@ -25,9 +25,9 @@ DerivedData
 project.xcworkspace
 
 # Gradle
-/android/.gradle
-/android/.gradle/*
-/android/app/build/*
+android/.gradle
+android/.gradle/*
+android/app/build/*
 /build/
 /packages/react-native-codegen/android/build/
 /packages/react-native-codegen/android/gradlePlugin-build/gradlePlugin/build
