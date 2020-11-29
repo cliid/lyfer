@@ -1,57 +1,72 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import RNDateTimePicker from '@react-native-community/datetimepicker';
 import {msToHHMMSS} from '../util/time-formatter';
 
-function TimerScreen() {
-  const {colors} = useTheme();
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isRunning: false,
+      isTimeSet: false,
+      time: new Date(0),
+      show: false,
+    };
+  }
 
-  const [isRunning, setIsRunning] = useState(false);
-  const [isTimeSet, setIsTimeSet] = useState(false);
-  const [time, setTime] = useState(new Date(0));
-  const [show, setShow] = useState(false);
-
-  let interval;
-
-  const onChange = (event, selectedTime) => {
+  onChange = (event, selectedTime) => {
     if (event.type === 'set') {
-      setTime(selectedTime);
-      setShow(false);
-      setIsTimeSet(true);
+      this.setState({
+        time: selectedTime,
+        show: false,
+        isTimeSet: true,
+      });
     } else if (event.type === 'dismissed') {
-      setShow(false);
+      this.setState({
+        show: false,
+      });
     }
   };
 
-  function clickTime() {
-    setShow(true);
+  clickTime() {
+    this.setState({
+      show: true,
+    });
   }
-  function clickStartBtn() {
-    if (!isTimeSet) {
-      setShow(true);
+  clickStartBtn() {
+    if (!this.state.isTimeSet) {
+      this.setState({
+        show: true,
+      });
     } else {
-      if (!isRunning) {
-        change();
+      if (!this.state.isRunning) {
+        this.change();
       }
     }
   }
 
-  function clickPauseBtn() {
-    clearInterval(interval);
-    setIsRunning(false);
+  clickPauseBtn() {
+    clearInterval(this.interval);
+    this.setState({
+      isRunning: false,
+    });
   }
 
-  function clickResetBtn() {
-    clearInterval(interval);
-    setIsRunning(false);
+  clickResetBtn() {
+    clearInterval(this.interval);
+    this.setState({
+      isRunning: false,
+    });
   }
-  function change() {
-    if (isTimeSet) {
-      if (time > 0) {
-        interval = setInterval(() => {
-          setTime(time - 10);
-          console.log(time);
+  change() {
+    if (this.state.isTimeSet) {
+      if (this.state.time > 0) {
+        this.interval = setInterval(() => {
+          this.setState({
+            time: this.state.time - 10,
+          });
+          console.log(this.state.time);
         }, 10);
       } else {
         console.log('timer done');
@@ -59,63 +74,91 @@ function TimerScreen() {
     }
   }
 
-  function _renderTimer() {
+  _renderTimer() {
     return (
-      <View style={[styles.timerWrapper, {backgroundColor: colors.background}]}>
+      <View
+        style={[
+          styles.timerWrapper,
+          {backgroundColor: this.props.theme.colors.background},
+        ]}>
         <TouchableHighlight
-          underlayColor={colors.background}
-          onPress={clickTime}
+          underlayColor={this.props.theme.colors.background}
+          onPress={this.clickTime}
           style={styles.time}>
-          <Text style={[styles.time, {color: colors.text}]}>
-            {msToHHMMSS(time)}
+          <Text style={[styles.time, {color: this.props.theme.colors.text}]}>
+            {msToHHMMSS(this.state.time)}
           </Text>
         </TouchableHighlight>
-        {show && (
+        {this.state.show && (
           <RNDateTimePicker
-            value={time}
+            value={this.state.time}
             mode="time"
             display="spinner"
-            onChange={onChange}
+            onChange={this.onChange}
           />
         )}
       </View>
     );
   }
 
-  function _renderButtons() {
+  _renderButtons() {
     return (
       <View style={styles.buttonWrapper}>
         <TouchableHighlight
-          underlayColor={colors.disabled}
-          onPress={clickStartBtn}
-          style={[styles.button, {backgroundColor: colors.background}]}>
-          <Text style={[styles.startBtn, {color: colors.text}]}>Start</Text>
-        </TouchableHighlight>
-        <TouchableHighlight
-          underlayColor={colors.disabled}
-          onPress={clickPauseBtn}
-          style={[styles.button, {backgroundColor: colors.background}]}>
-          <Text style={[styles.pauseBtn, {color: colors.text}]}>Pause</Text>
-        </TouchableHighlight>
-        <TouchableHighlight
-          underlayColor={colors.disabled}
-          onPress={clickResetBtn}
+          underlayColor={this.props.theme.colors.disabled}
+          onPress={this.clickStartBtn}
           style={[
             styles.button,
-            {backgroundColor: colors.background, color: colors.text},
+            {backgroundColor: this.props.theme.colors.background},
           ]}>
-          <Text style={[styles.resetBtn, {color: colors.text}]}>Reset</Text>
+          <Text
+            style={[styles.startBtn, {color: this.props.theme.colors.text}]}>
+            Start
+          </Text>
+        </TouchableHighlight>
+        <TouchableHighlight
+          underlayColor={this.props.theme.colors.disabled}
+          onPress={this.clickPauseBtn}
+          style={[
+            styles.button,
+            {backgroundColor: this.props.theme.colors.background},
+          ]}>
+          <Text
+            style={[styles.pauseBtn, {color: this.props.theme.colors.text}]}>
+            Pause
+          </Text>
+        </TouchableHighlight>
+        <TouchableHighlight
+          underlayColor={this.props.theme.colors.disabled}
+          onPress={this.clickResetBtn}
+          style={[
+            styles.button,
+            {
+              backgroundColor: this.props.theme.colors.background,
+              color: this.props.theme.colors.text,
+            },
+          ]}>
+          <Text
+            style={[styles.resetBtn, {color: this.props.theme.colors.text}]}>
+            Reset
+          </Text>
         </TouchableHighlight>
       </View>
     );
   }
 
-  return (
-    <View style={[styles.container, {backgroundColor: colors.background}]}>
-      <View style={styles.top}>{_renderTimer()}</View>
-      <View style={styles.bottom}>{_renderButtons()}</View>
-    </View>
-  );
+  render() {
+    return (
+      <View
+        style={[
+          styles.container,
+          {backgroundColor: this.props.theme.colors.background},
+        ]}>
+        <View style={styles.top}>{this._renderTimer()}</View>
+        <View style={styles.bottom}>{this._renderButtons()}</View>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -164,4 +207,8 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TimerScreen;
+export default function TimerScreen(props) {
+  const theme = useTheme();
+
+  return <Timer {...props} theme={theme} />;
+}

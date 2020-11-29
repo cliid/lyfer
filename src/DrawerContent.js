@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
 import {DrawerItem, DrawerContentScrollView} from '@react-navigation/drawer';
 import {
   useTheme,
@@ -8,10 +8,9 @@ import {
   Caption,
   Drawer,
   Text,
-  TouchableRipple,
-  Switch,
 } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Toggle from './components/Toggle';
 import {Context} from './components/Context';
 export function DrawerContent(props) {
   const paperTheme = useTheme();
@@ -103,14 +102,21 @@ export function DrawerContent(props) {
           />
         </Drawer.Section>
         <Drawer.Section title="Preferences">
-          <TouchableRipple onPress={() => toggleTheme()}>
-            <View style={styles.preference}>
-              <Text>Dark Theme</Text>
-              <View pointerEvents="none">
-                <Switch value={paperTheme.dark} />
-              </View>
+          <View style={styles.preference}>
+            <Text>Dark Theme</Text>
+            <View>
+              <Toggle
+                value={paperTheme.dark}
+                onPress={() => toggleTheme()}
+                trackBar={{
+                  activeBackgroundColor: '#4287f5',
+                  inActiveBackgroundColor: '#eceaec',
+                  borderActiveColor: '#4287f5',
+                  borderInActiveColor: '#eceaec',
+                }}
+              />
             </View>
-          </TouchableRipple>
+          </View>
         </Drawer.Section>
       </View>
     </DrawerContentScrollView>
