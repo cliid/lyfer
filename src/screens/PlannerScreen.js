@@ -1,118 +1,164 @@
-import React, {useState, useEffect} from 'react';
+import React, {Component} from 'react';
 import {
   StyleSheet,
   Text,
-  TextInput,
   View,
-  Button,
   ScrollView,
+  TouchableOpacity,
+  TextInput,
 } from 'react-native';
-import AppBar from '../components/AppBar';
-import Todo from '../components/Todo';
-import TodoList from '../components/TodoList';
+// import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import {useTheme} from 'react-native-paper';
 
-export default function PlannerScreen() {
-  const [title, setTitle] = useState('');
+import Note from '../components/Note';
 
-  // iniitalize empty object todo
-  const [todo, setTodo] = useState({});
+class Planner extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      notes: [],
+      noteText: '',
+    };
+    this.addNote = this.addNote.bind(this);
+    this.deleteNote = this.deleteNote.bind(this);
+  }
 
-  // Initalize empty array to store todos
-  const [todos, setTodos] = useState([]);
-
-  // function to add todo object in todo list
-  const addTodo = () => {
-    if (title.length > 0) {
-      // Add todo to the list
-      setTodos([...todos, {key: Date.now(), name: title, isChecked: false}]);
-      // clear the value of the textfield
-      setTitle('');
+  addNote() {
+    if (this.state.noteText) {
+      let date = new Date();
+      this.state.notes.push({
+        date:
+          date.getDate() +
+          '/' +
+          (date.getMonth() + 1 + '/' + date.getFullYear()),
+        note: this.state.noteText,
+      });
+      this.setState({notes: this.state.notes});
+      this.setState({noteText: ''});
     }
-  };
+  }
+  deleteNote(key) {
+    this.state.notes.splice(key, 1);
+    this.setState({notes: this.state.notes});
+  }
 
-  // function to mark todo as checked or unchecked
-  const checkTodo = (id) => {
-    // loop through todo list and look for the the todo that matches the given id param
-    // update the state using setTodos function
-    setTodos(
-      todos.map((todo) => {
-        if (todo.key === id) {
-          todo.isChecked = !todo.isChecked;
-        }
-        return todo;
-      }),
-    );
-  };
-
-  // function to delete todo from the todo list
-  const deleteTodo = (id) => {
-    // loop through todo list and return todos that don't match the id
-    // update the state using setTodos function
-    setTodos(
-      todos.filter((todo) => {
-        return todo.key !== id;
-      }),
-    );
-  };
-
-  useEffect(() => {
-    console.log(todos.length, 'TodoList length');
-    //console.log(todos);
-  }, [todos]);
-
-  return (
-    <View style={styles.container}>
-      <View style={styles.statusBar} />
-      <AppBar />
-      <View style={styles.todo}>
-        <TextInput
-          placeholder="Add a todo"
-          value={title}
-          onChangeText={(value) => setTitle(value)}
-          style={styles.textbox}
+  render() {
+    let notes = this.state.notes.map((note, key) => {
+      return (
+        <Note
+          key={key}
+          keyVal={key}
+          note={note}
+          deleteMethod={() => this.deleteNote(key)}
         />
-        <Button title="Add" color="#7F39FB" onPress={() => addTodo()} />
-      </View>
+      );
+    });
 
-      <ScrollView>
-        {todos.map((todo) => (
-          <TodoList
-            key={todo.key}
-            todo={todo}
-            checkTodo={checkTodo}
-            deleteTodo={deleteTodo}
+    return (
+      <View style={styles.container}>
+        <View
+          style={[styles.header, {borderColor: this.props.theme.colors.text}]}>
+          <Text
+            style={[
+              styles.headerText,
+              {
+                borderBottomColor: this.props.theme.colors.disabled,
+                color: this.props.theme.colors.text,
+              },
+            ]}>
+            Planner
+          </Text>
+        </View>
+
+        <ScrollView>{notes}</ScrollView>
+
+        <View style={styles.footer}>
+          <TextInput
+            style={[
+              styles.textInput,
+              {
+                backgroundColor: this.props.theme.colors.background,
+                borderTopColor: this.props.theme.colors.disabled,
+                color: this.props.theme.colors.text,
+              },
+            ]}
+            onChangeText={(noteText) => this.setState({noteText})}
+            value={this.state.noteText}
+            placeholder="Make a note"
+            placeholderTextColor={this.props.theme.colors.disabled}
           />
-        ))}
-      </ScrollView>
-    </View>
-  );
+        </View>
+
+        <TouchableOpacity
+          style={[
+            styles.addButton,
+            {
+              backgroundColor: this.props.theme.colors.text,
+            },
+          ]}
+          onPress={this.addNote}>
+          <Text
+            style={[
+              styles.addButtonText,
+              {color: this.props.theme.colors.background},
+            ]}>
+            Add
+          </Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  statusBar: {
-    backgroundColor: '#7F39FB',
-    color: '#fff',
-    width: '100%',
-    height: 30,
-  },
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
   },
-  todo: {
-    flexDirection: 'row',
-    width: '100%',
+  header: {
+    alignItems: 'center',
     justifyContent: 'center',
-    alignItems: 'center',
+    borderBottomWidth: 6,
   },
-  textbox: {
-    borderWidth: 1,
-    borderColor: '#7F39FB',
-    borderRadius: 8,
-    padding: 10,
-    margin: 10,
-    width: '80%',
+  headerText: {
+    color: 'white',
+    fontSize: 18,
+    fontFamily: 'CircularStd-Medium',
+    padding: 26,
+  },
+
+  textInput: {
+    alignSelf: 'stretch',
+    padding: 20,
+    borderTopWidth: 2,
+    fontFamily: 'CircularStd-Medium',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    zIndex: 10,
+  },
+  addButton: {
+    position: 'absolute',
+    zIndex: 11,
+    right: 20,
+    bottom: 90,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 8,
+  },
+  addButtonText: {
+    fontFamily: 'CircularStd-Medium',
+    fontSize: 18,
   },
 });
+
+export default function PlannerScreen(props) {
+  const theme = useTheme();
+
+  return <Planner {...props} theme={theme} />;
+}
