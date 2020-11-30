@@ -113,20 +113,37 @@ export function DrawerContent(props) {
             </View>
           </TouchableRipple>
         </Drawer.Section>
-        <Drawer.Section title="Sign Out">
-          <TouchableRipple onPress={() => toggleTheme()}>
-            <View style={styles.signOut}>
-              <Text>Sign Out</Text>
-              <View pointerEvents="none">
-                <ToggleSwitch
-                  isOn={paperTheme.dark}
-                  onToggle={() => {}}
-                  onColor="#4287f5"
-                  offColor="#eceaec"
-                />
-              </View>
-            </View>
-          </TouchableRipple>
+        <Drawer.Section>
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons name="logout" color={color} size={size} />
+            )}
+            label="Logout"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.toggleDrawer();
+              Alert.alert(
+                'Sign Out',
+                'Are you sure? You want to logout?',
+                [
+                  {
+                    text: 'Cancel',
+                    onPress: () => {
+                      return null;
+                    },
+                  },
+                  {
+                    text: 'Confirm',
+                    onPress: () => {
+                      AsyncStorage.clear();
+                      props.navigation.replace('Auth');
+                    },
+                  },
+                ],
+                {cancelable: false},
+              );
+            }}
+          />
         </Drawer.Section>
       </View>
     </DrawerContentScrollView>
