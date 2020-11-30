@@ -1,4 +1,0 @@
-#Sun Nov 29 19:29:20 KST 2020
-base.0=C\:\\Users\\jiwuj\\Projects\\lyfer\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import RNBootSplash from 'react-native-bootsplash';
+import React, {useEffect, useState} from 'react';
+
 import {
   Provider as PaperProvider,
   DefaultTheme as PaperDefaultTheme,
@@ -11,24 +11,16 @@ import {
   DefaultTheme as NavigationDefaultTheme,
   DarkTheme as NavigationDarkTheme,
 } from '@react-navigation/native';
-import {createDrawerNavigator} from '@react-navigation/drawer';
-
 import {Context} from './src/components/Context';
-import {DrawerContent} from './src/DrawerContent';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import MusicScreen from './src/screens/MusicScreen';
-import CalculatorScreen from './src/screens/CalculatorScreen';
-import ClockScreen from './src/screens/ClockScreen';
-import PlannerScreen from './src/screens/PlannerScreen';
-import AboutScreen from './src/screens/AboutScreen';
+import MainScreen from './src/screens/MainScreen';
+import SplashScreen from './src/screens/SplashScreen';
+import AuthScreen from './src/screens/AuthScreen';
 
-const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
 const App = () => {
-  useEffect(() => {
-    RNBootSplash.hide({fade: true, duration: 1000}); // fade
-  }, []);
-
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
 
   const fontConfig = {
@@ -90,15 +82,24 @@ const App = () => {
     <PaperProvider theme={theme}>
       <Context.Provider value={context}>
         <NavigationContainer theme={theme}>
-          <Drawer.Navigator
-            initialRouteName="Clock"
-            drawerContent={(props) => <DrawerContent {...props} />}>
-            <Drawer.Screen name="Clock" component={ClockScreen} />
-            <Drawer.Screen name="Music" component={MusicScreen} />
-            <Drawer.Screen name="Calculator" component={CalculatorScreen} />
-            <Drawer.Screen name="Planner" component={PlannerScreen} />
-            <Drawer.Screen name="About" component={AboutScreen} />
-          </Drawer.Navigator>
+          <Stack.Navigator initialRouteName="SplashScreen">
+            <Stack.Screen
+              name="Splash"
+              component={SplashScreen}
+              // Hiding header for Splash Screen
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="Auth"
+              component={AuthScreen}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="Main"
+              component={MainScreen}
+              options={{headerShown: false}}
+            />
+          </Stack.Navigator>
         </NavigationContainer>
       </Context.Provider>
     </PaperProvider>

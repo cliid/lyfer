@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import {View, StyleSheet, Alert} from 'react-native';
 import {DrawerItem, DrawerContentScrollView} from '@react-navigation/drawer';
 import {
   useTheme,
@@ -8,24 +8,21 @@ import {
   Caption,
   Drawer,
   Text,
+  TouchableRipple,
+  Button,
 } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Toggle from './components/Toggle';
+import ToggleSwitch from './components/ToggleSwitch';
 import {Context} from './components/Context';
+import AsyncStorage from '@react-native-community/async-storage';
 export function DrawerContent(props) {
   const paperTheme = useTheme();
   const {toggleTheme} = React.useContext(Context);
+
   return (
     <DrawerContentScrollView {...props}>
       <View style={styles.drawerContent}>
         <View style={styles.userInfoSection}>
-          <Avatar.Image
-            source={{
-              uri:
-                'https://pbs.twimg.com/profile_images/952545910990495744/b59hSXUd_400x400.jpg',
-            }}
-            size={50}
-          />
           <Title style={styles.title}>Jiwu Jang</Title>
           <Caption style={styles.caption}>@cliid</Caption>
         </View>
@@ -102,21 +99,34 @@ export function DrawerContent(props) {
           />
         </Drawer.Section>
         <Drawer.Section title="Preferences">
-          <View style={styles.preference}>
-            <Text>Dark Theme</Text>
-            <View>
-              <Toggle
-                value={paperTheme.dark}
-                onPress={() => toggleTheme()}
-                trackBar={{
-                  activeBackgroundColor: '#4287f5',
-                  inActiveBackgroundColor: '#eceaec',
-                  borderActiveColor: '#4287f5',
-                  borderInActiveColor: '#eceaec',
-                }}
-              />
+          <TouchableRipple onPress={() => toggleTheme()}>
+            <View style={styles.preference}>
+              <Text>Dark Theme</Text>
+              <View pointerEvents="none">
+                <ToggleSwitch
+                  isOn={paperTheme.dark}
+                  onToggle={() => {}}
+                  onColor="#4287f5"
+                  offColor="#eceaec"
+                />
+              </View>
             </View>
-          </View>
+          </TouchableRipple>
+        </Drawer.Section>
+        <Drawer.Section title="Sign Out">
+          <TouchableRipple onPress={() => toggleTheme()}>
+            <View style={styles.signOut}>
+              <Text>Sign Out</Text>
+              <View pointerEvents="none">
+                <ToggleSwitch
+                  isOn={paperTheme.dark}
+                  onToggle={() => {}}
+                  onColor="#4287f5"
+                  offColor="#eceaec"
+                />
+              </View>
+            </View>
+          </TouchableRipple>
         </Drawer.Section>
       </View>
     </DrawerContentScrollView>
@@ -156,7 +166,9 @@ const styles = StyleSheet.create({
   preference: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: 12,
+    paddingVertical: 15,
     paddingHorizontal: 16,
+    alignItems: 'center',
   },
+  signOut: {},
 });
