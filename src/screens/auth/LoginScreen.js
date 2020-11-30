@@ -195,6 +195,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     borderColor: '#dadae8',
     fontFamily: 'CircularStd-Medium',
+    fontWeight: 'normal'
   },
   registerTextStyle: {
     color: '#FFFFFF',
