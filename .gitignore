@@ -25,6 +25,8 @@ DerivedData
 project.xcworkspace
 
 # Gradle
+android/.gradle/6.2/executionHistory/executionHistory.bin
+android/.gradle/6.2/javaCompile/taskHistory.bin
 android/.gradle
 android/.gradle/*
 android/app/build/*
