@@ -10,77 +10,87 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-
+import AsyncStorage from '@react-native-community/async-storage';
 import Loader from '../../components/Loader';
 
 const RegisterScreen = (props) => {
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [userAge, setUserAge] = useState('');
-  const [userAddress, setUserAddress] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [errorText, setErrorText] = useState('');
   const [isRegistrationSuccess, setIsRegistrationSuccess] = useState(false);
 
-  const nameInputRef = createRef();
   const emailInputRef = createRef();
-  const ageInputRef = createRef();
-  const addressInputRef = createRef();
+  const usernameInputRef = createRef();
+  const passwordInputRef = createRef();
 
   const handleSubmitButton = () => {
     setErrorText('');
-    if (!userName) {
+    if (!name) {
       alert('Please fill Name');
       return;
     }
-    if (!userEmail) {
+    if (!email) {
       alert('Please fill Email');
       return;
     }
-    if (!userAge) {
-      alert('Please fill Age');
+    if (!username) {
+      alert('Please fill Username');
       return;
     }
-    if (!userAddress) {
-      alert('Please fill Address');
+    if (!password) {
+      alert('Please fill Password');
       return;
     }
     //Show Loader
     setLoading(true);
     const dataToSend = {
-      user_name: userName,
-      user_email: userEmail,
-      user_age: userAge,
-      user_address: userAddress,
+      name: name,
+      username: username,
+      email: email,
+      password: password,
     };
-    let formBody = [];
-    for (const key in dataToSend) {
-      const encodedKey = encodeURIComponent(key);
-      const encodedValue = encodeURIComponent(dataToSend[key]);
-      formBody.push(encodedKey + '=' + encodedValue);
-    }
-    formBody = formBody.join('&');
 
-    fetch('https://lyfer.jitcijk.org/register', {
+    fetch('https://lyfer.jitcijk.org/v1/auth/register', {
       method: 'POST',
-      body: formBody,
+      body: JSON.stringify(dataToSend),
       headers: {
         //Header Definition
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/json',
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status !== 201) {
+          if (response.status === 400) {
+            setErrorText(
+              response.json().then((responseJson) => responseJson.message),
+            );
+          } else {
+            setErrorText('Registration Unsuccessful');
+          }
+        }
+        return response.json();
+      })
       .then((responseJson) => {
+        if (responseJson.tokens == null) {
+          setLoading(false);
+          return;
+        }
         //Hide Loader
         setLoading(false);
-        console.log(responseJson);
-        // If server response message same as Data Matched
-        if (responseJson.status === 1) {
-          setIsRegistrationSuccess(true);
-          console.log('Registration Successful. Please Login to proceed');
-        } else {
-          setErrorText('Registration Unsuccessful');
-        }
+        AsyncStorage.setItem('access_token', responseJson.tokens.access.token);
+        AsyncStorage.setItem(
+          'refresh_token',
+          responseJson.tokens.refresh.token,
+        );
+        AsyncStorage.setItem('role', responseJson.user.role);
+        AsyncStorage.setItem('name', responseJson.user.name);
+        AsyncStorage.setItem('username', responseJson.user.username);
+
+        setIsRegistrationSuccess(true);
+        console.log('Registration Successful. Please Login to proceed');
       })
       .catch((error) => {
         //Hide Loader
@@ -138,11 +148,27 @@ const RegisterScreen = (props) => {
           <View style={styles.SectionStyle}>
             <TextInput
               style={styles.inputStyle}
-              onChangeText={(UserName) => setUserName(UserName)}
+              onChangeText={(name) => setName(name)}
               underlineColorAndroid="#f000"
               placeholder="Enter Name"
               placeholderTextColor="#8b9cb5"
               autoCapitalize="sentences"
+              returnKeyType="next"
+              onSubmitEditing={() =>
+                usernameInputRef.current && usernameInputRef.current.focus()
+              }
+              blurOnSubmit={false}
+            />
+          </View>
+          <View style={styles.SectionStyle}>
+            <TextInput
+              style={styles.inputStyle}
+              onChangeText={(username) => setUsername(username)}
+              underlineColorAndroid="#f000"
+              placeholder="Enter Username"
+              placeholderTextColor="#8b9cb5"
+              autoCapitalize="none"
+              ref={usernameInputRef}
               returnKeyType="next"
               onSubmitEditing={() =>
                 emailInputRef.current && emailInputRef.current.focus()
@@ -153,45 +179,29 @@ const RegisterScreen = (props) => {
           <View style={styles.SectionStyle}>
             <TextInput
               style={styles.inputStyle}
-              onChangeText={(UserEmail) => setUserEmail(UserEmail)}
+              onChangeText={(email) => setEmail(email)}
               underlineColorAndroid="#f000"
               placeholder="Enter Email"
               placeholderTextColor="#8b9cb5"
+              autoCapitalize="none"
               keyboardType="email-address"
               ref={emailInputRef}
               returnKeyType="next"
-              onSubmitEditing={() =>
-                ageInputRef.current && ageInputRef.current.focus()
-              }
+              onSubmitEditing={() => email.current && email.current.focus()}
               blurOnSubmit={false}
             />
           </View>
           <View style={styles.SectionStyle}>
             <TextInput
               style={styles.inputStyle}
-              onChangeText={(UserAge) => setUserAge(UserAge)}
+              onChangeText={(password) => setPassword(password)}
               underlineColorAndroid="#f000"
-              placeholder="Enter Age"
+              placeholder="Enter Password"
               placeholderTextColor="#8b9cb5"
-              keyboardType="numeric"
-              ref={ageInputRef}
+              autoCapitalize="none"
+              ref={passwordInputRef}
               returnKeyType="next"
-              onSubmitEditing={() =>
-                addressInputRef.current && addressInputRef.current.focus()
-              }
-              blurOnSubmit={false}
-            />
-          </View>
-          <View style={styles.SectionStyle}>
-            <TextInput
-              style={styles.inputStyle}
-              onChangeText={(UserAddress) => setUserAddress(UserAddress)}
-              underlineColorAndroid="#f000"
-              placeholder="Enter Address"
-              placeholderTextColor="#8b9cb5"
-              autoCapitalize="sentences"
-              ref={addressInputRef}
-              returnKeyType="next"
+              secureTextEntry={true}
               onSubmitEditing={Keyboard.dismiss}
               blurOnSubmit={false}
             />

@@ -1,15 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, StyleSheet, Alert} from 'react-native';
 import {DrawerItem, DrawerContentScrollView} from '@react-navigation/drawer';
 import {
   useTheme,
-  Avatar,
   Title,
   Caption,
   Drawer,
   Text,
   TouchableRipple,
-  Button,
 } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import ToggleSwitch from './components/ToggleSwitch';
@@ -18,13 +16,21 @@ import AsyncStorage from '@react-native-community/async-storage';
 export function DrawerContent(props) {
   const paperTheme = useTheme();
   const {toggleTheme} = React.useContext(Context);
+  const [name, setName] = useState();
+  const [username, setUsername] = useState();
 
+  useEffect(() => {
+    (async () => {
+      setName(await AsyncStorage.getItem('name'));
+      setUsername(await AsyncStorage.getItem('username'));
+    })();
+  }, []);
   return (
     <DrawerContentScrollView {...props}>
       <View style={styles.drawerContent}>
         <View style={styles.userInfoSection}>
-          <Title style={styles.title}>Jiwu Jang</Title>
-          <Caption style={styles.caption}>@cliid</Caption>
+          <Title style={styles.title}>{name}</Title>
+          <Caption style={styles.caption}>@{username}</Caption>
         </View>
         <Drawer.Section style={styles.drawerSection}>
           <DrawerItem
@@ -135,7 +141,9 @@ export function DrawerContent(props) {
                   {
                     text: 'Confirm',
                     onPress: () => {
-                      AsyncStorage.clear();
+                      (async () => {
+                        await AsyncStorage.clear();
+                      })();
                       props.navigation.replace('Auth');
                     },
                   },

@@ -35,39 +35,45 @@ const LoginScreen = ({navigation}) => {
     }
     setLoading(true);
     let dataToSend = {
-      user_email: userEmail,
-      user_password: userPassword,
+      email: userEmail,
+      password: userPassword,
     };
-    let formBody = [];
-    for (let key in dataToSend) {
-      let encodedKey = encodeURIComponent(key);
-      let encodedValue = encodeURIComponent(dataToSend[key]);
-      formBody.push(encodedKey + '=' + encodedValue);
-    }
-    formBody = formBody.join('&');
 
-    fetch('https://lyfer.jitcijk.org/login', {
+    fetch('https://lyfer.jitcijk.org/v1/auth/login', {
       method: 'POST',
-      body: formBody,
+      body: JSON.stringify(dataToSend),
       headers: {
         //Header Definition
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/json',
       },
     })
-      .then((response) => response.json())
-      .then((responseJson) => {
-        //Hide Loader
-        setLoading(false);
-        console.log(responseJson);
-        // If server response message same as Data Matched
-        if (responseJson.status === 1) {
-          AsyncStorage.setItem('user_id', responseJson.data[0].user_id);
-          console.log(responseJson.data[0].user_id);
-          navigation.replace('MainScreen');
-        } else {
+      .then((response) => {
+        if (response.status !== 200) {
           setErrorText('Please check your email id or password');
           console.log('Please check your email id or password');
         }
+        return response.json();
+      })
+      .then(async (responseJson) => {
+        if (responseJson.tokens == null) {
+          setLoading(false);
+          return;
+        }
+        //Hide Loader
+        setLoading(false);
+        await AsyncStorage.setItem(
+          'access_token',
+          responseJson.tokens.access.token,
+        );
+        await AsyncStorage.setItem(
+          'refresh_token',
+          responseJson.tokens.refresh.token,
+        );
+        await AsyncStorage.setItem('role', responseJson.user.role);
+        await AsyncStorage.setItem('name', responseJson.user.name);
+        await AsyncStorage.setItem('username', responseJson.user.username);
+
+        navigation.replace('Main');
       })
       .catch((error) => {
         //Hide Loader
@@ -195,7 +201,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     borderColor: '#dadae8',
     fontFamily: 'CircularStd-Medium',
-    fontWeight: 'normal'
+    fontWeight: 'normal',
   },
   registerTextStyle: {
     color: '#FFFFFF',

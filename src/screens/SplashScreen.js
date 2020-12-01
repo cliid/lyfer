@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 
 import AsyncStorage from '@react-native-community/async-storage';
@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
     const init = async () => {
-      AsyncStorage.getItem('user_id').then((value) =>
+      AsyncStorage.getItem('access_token').then((value) =>
         navigation.replace(value === null ? 'Auth' : 'Main'),
       );
     };
