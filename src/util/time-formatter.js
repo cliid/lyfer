@@ -29,3 +29,8 @@ export function msToHHMMSS(duration) {
 
   return hours + ':' + minutes + ':' + seconds;
 }
+
+export function decimalToHHMMSS(duration) {
+  let timeStringWithoutColons = ('000000' + duration).slice(-6);
+  return timeStringWithoutColons.replace(/(..)/g, '$1:').slice(0, -1);
+}

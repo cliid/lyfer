@@ -6,6 +6,7 @@ import ClockScreen from './main/ClockScreen';
 import MusicScreen from './main/MusicScreen';
 import CalculatorScreen from './main/CalculatorScreen';
 import PlannerScreen from './main/PlannerScreen';
+import RankScreen from './main/RankScreen';
 import AboutScreen from './main/AboutScreen';
 
 const Drawer = createDrawerNavigator();
@@ -19,6 +20,7 @@ export default function MainScreen({navigation}) {
       <Drawer.Screen name="Music" component={MusicScreen} />
       <Drawer.Screen name="Calculator" component={CalculatorScreen} />
       <Drawer.Screen name="Planner" component={PlannerScreen} />
+      <Drawer.Screen name="Rank" component={RankScreen} />
       <Drawer.Screen name="About" component={AboutScreen} />
     </Drawer.Navigator>
   );

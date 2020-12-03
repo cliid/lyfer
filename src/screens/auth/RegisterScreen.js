@@ -103,7 +103,7 @@ const RegisterScreen = (props) => {
       <View
         style={{
           flex: 1,
-          backgroundColor: '#307ecc',
+          backgroundColor: '#2c2f33',
           justifyContent: 'center',
         }}>
         <Image
@@ -232,10 +232,10 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   buttonStyle: {
-    backgroundColor: '#7DE24E',
+    backgroundColor: '#4287f5',
     borderWidth: 0,
     color: '#FFFFFF',
-    borderColor: '#7DE24E',
+    borderColor: '#4287f5',
     height: 40,
     alignItems: 'center',
     borderRadius: 30,

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Animated,
   Platform,
+  Easing,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
@@ -127,6 +128,7 @@ export default class ToggleSwitch extends React.Component {
       toValue,
       duration: this.props.animationSpeed,
       useNativeDriver: this.props.useNativeDriver,
+      easing: Easing.out(Easing.ease),
     }).start();
 
     return (

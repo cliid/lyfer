@@ -110,7 +110,7 @@ class Calculator extends Component {
     const {theme} = this.props;
     return (
       <View style={styles.container}>
-        <View style={styles.top}>
+        <View style={[styles.top, {borderBottomColor: theme.colors.text}]}>
           <Text style={[styles.number, {color: theme.colors.text}]}>
             {this.state.bts}
           </Text>
@@ -226,6 +226,7 @@ const styles = StyleSheet.create({
   },
   top: {
     paddingTop: 50,
+    borderBottomWidth: 2,
   },
   bottom: {
     flex: 1,

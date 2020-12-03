@@ -2,9 +2,9 @@ import React from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import {useTheme} from 'react-native-paper';
 
-import WorldClockScreen from './WorldClockScreen';
-import TimerScreen from './TimerScreen';
-import StopwatchScreen from './StopwatchScreen';
+import WorldClockScreen from './clock/WorldClockScreen';
+import TimerScreen from './clock/TimerScreen';
+import StopwatchScreen from './clock/StopwatchScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 

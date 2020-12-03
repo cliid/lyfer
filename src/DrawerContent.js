@@ -36,6 +36,22 @@ export function DrawerContent(props) {
           <DrawerItem
             icon={({color, size}) => (
               <MaterialCommunityIcons
+                name="podium-gold"
+                color={color}
+                size={size}
+              />
+            )}
+            label="Rank"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.navigate('Rank');
+            }}
+          />
+        </Drawer.Section>
+        <Drawer.Section style={styles.drawerSection}>
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons
                 name="clock-time-four-outline"
                 color={color}
                 size={size}
@@ -89,6 +105,7 @@ export function DrawerContent(props) {
               props.navigation.navigate('Planner');
             }}
           />
+
           <DrawerItem
             icon={({color, size}) => (
               <MaterialCommunityIcons
@@ -114,6 +131,7 @@ export function DrawerContent(props) {
                   onToggle={() => {}}
                   onColor="#4287f5"
                   offColor="#eceaec"
+                  animationSpeed={250}
                 />
               </View>
             </View>
@@ -161,6 +179,10 @@ export function DrawerContent(props) {
 const styles = StyleSheet.create({
   drawerContent: {
     flex: 1,
+  },
+  userInfoWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
   userInfoSection: {
     paddingLeft: 20,
