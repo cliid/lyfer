@@ -15,6 +15,8 @@ export default function MainScreen({navigation}) {
   return (
     <Drawer.Navigator
       initialRouteName="Clock"
+      edgeWidth={10000}
+      drawerType="front"
       drawerContent={(props) => <DrawerContent {...props} />}>
       <Drawer.Screen name="Clock" component={ClockScreen} />
       <Drawer.Screen name="Music" component={MusicScreen} />

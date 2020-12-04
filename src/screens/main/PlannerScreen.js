@@ -6,6 +6,7 @@ import {
   ScrollView,
   TouchableOpacity,
   TextInput,
+  SafeAreaView,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
 
@@ -54,7 +55,7 @@ class Planner extends Component {
     });
 
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View
           style={[styles.header, {borderColor: this.props.theme.colors.text}]}>
           <Text
@@ -104,7 +105,7 @@ class Planner extends Component {
             Add
           </Text>
         </TouchableOpacity>
-      </View>
+      </SafeAreaView>
     );
   }
 }

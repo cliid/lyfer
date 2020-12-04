@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableHighlight,
   FlatList,
+  SafeAreaView,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
 import {msToTime} from '../../../util/time-formatter';
@@ -116,7 +117,7 @@ class Stopwatch extends Component {
   _renderButtons() {
     const {theme} = this.props;
     return (
-      <View style={styles.buttonWrapper}>
+      <SafeAreaView style={styles.buttonWrapper}>
         <TouchableHighlight
           onPress={this.handleLapReset.bind(this)}
           style={[
@@ -148,7 +149,7 @@ class Stopwatch extends Component {
             {this.state.isRunning ? 'Stop' : 'Start'}
           </Text>
         </TouchableHighlight>
-      </View>
+      </SafeAreaView>
     );
   }
   _renderLaps() {

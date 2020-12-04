@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView} from 'react-native';
 import CalcBtn from '../../components/Button';
 import {useTheme} from 'react-native-paper';
 
@@ -109,7 +109,7 @@ class Calculator extends Component {
     const {displayValue} = this.state;
     const {theme} = this.props;
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={[styles.top, {borderBottomColor: theme.colors.text}]}>
           <Text style={[styles.number, {color: theme.colors.text}]}>
             {this.state.bts}
@@ -215,7 +215,7 @@ class Calculator extends Component {
             onPress={() => this.performOperation('=')}
           />
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 }

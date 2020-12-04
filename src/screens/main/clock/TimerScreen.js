@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, TouchableHighlight, View, Image} from 'react-native';
-import {useTheme} from '@react-navigation/native';
+import {
+  StyleSheet,
+  Text,
+  TouchableHighlight,
+  View,
+  SafeAreaView,
+} from 'react-native';
+import {useTheme} from 'react-native-paper';
 import {decimalToHHMMSS, msToHHMMSS} from '../../../util/time-formatter';
 import VirtualKeyboard from '../../../components/VirtualKeyboard';
 
@@ -33,7 +39,7 @@ class Timer extends Component {
   _pressNextBtn() {
     if (!(this.state.timer === 0)) {
       this.setState({initialTime: this.state.timer, isTimeSet: true});
-      this.goBackBtn.touchableHandlePress();
+      this.handleStartPause();
     }
   }
 
@@ -63,11 +69,19 @@ class Timer extends Component {
       timerStart: this.state.timer,
       isRunning: true,
     });
-
     this.interval = setInterval(() => {
-      this.setState({
-        timer: this.state.timer - 10,
-      });
+      if (this.state.timer <= 0) {
+        alert('Done');
+        clearInterval(this.interval);
+        this.setState({
+          isRunning: false,
+          timer: this.state.initialTime,
+        });
+      } else {
+        this.setState({
+          timer: this.state.timer - 10,
+        });
+      }
     }, 10);
   }
 
@@ -140,8 +154,7 @@ class Timer extends Component {
                 underlayColor: theme.colors.disabled,
                 shadowColor: theme.colors.text,
               },
-            ]}
-            ref={(component) => (this.goBackBtn = component)}>
+            ]}>
             <Text
               style={[styles.goBackBtnText, {color: theme.colors.background}]}>
               Go Back
@@ -229,14 +242,13 @@ class Timer extends Component {
       toRender = this._renderTimerSetting();
     }
     return (
-      <View
+      <SafeAreaView
         style={[styles.container, {backgroundColor: theme.colors.background}]}>
         {toRender}
-      </View>
+      </SafeAreaView>
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {flex: 1},
   virtualKeyboardWrapper: {

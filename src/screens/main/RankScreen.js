@@ -3,56 +3,73 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
-  Image,
   TextInput,
+  Text,
+  SafeAreaView,
+  FlatList,
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Leaderboard from '../../components/Leaderboard';
-import {Button, useTheme} from 'react-native-paper';
+import {useTheme} from 'react-native-paper';
 
 class Rank extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentPage: 1,
-      totalPage: 1,
-      accessToken: (async () => {
-        return await AsyncStorage.getItem('access_token');
-      })(),
-      refreshToken: (async () => {
-        return await AsyncStorage.getItem('refresh_token');
-      })(),
+      totalPages: 1,
+      accessToken: null,
+      refreshToken: null,
+      userList: null,
     };
   }
 
   componentDidMount() {
-    this.getUsers(this.state.currentPage);
+    (async () => {
+      this.setState({
+        accessToken: await AsyncStorage.getItem('access_token'),
+        refreshToken: await AsyncStorage.getItem('refresh_token'),
+      });
+    })();
+    this.getUsers();
   }
-  getUsers(page) {
-    fetch('https://lyfer.jitcijk.org/v1/users?page=' + page, {
-      method: 'GET',
-      withCredentials: true,
-      credentials: 'include',
-      headers: {
-        Authorization: 'Bearer ' + this.state.accessToken,
-        'Content-Type': 'application/json',
+  getUsers() {
+    // change to point system
+    fetch(
+      'https://lyfer.jitcijk.org/v1/users?sortBy=name:asc&limit=15&&page=' +
+        this.state.currentPage,
+      {
+        method: 'GET',
+        withCredentials: true,
+        credentials: 'include',
+        headers: {
+          Authorization: 'Bearer ' + this.state.accessToken,
+          'Content-Type': 'application/json',
+        },
       },
-    })
+    )
       .then((response) => {
         if (response.status === 200) {
           return response.json();
         } else if (response.status === 401) {
           this.refreshAccessToken();
-          this.getUsers(page);
+          this.getUsers();
         }
       })
-      .then((responseJson) => {});
+      .then((responseJson) => {
+        this.setState({
+          userList: responseJson.results,
+          currentPage: responseJson.page,
+          totalPages: responseJson.totalPages,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
   refreshAccessToken() {
     const dataToSend = {
-      refreshToken: (async () => {
-        return await AsyncStorage.getItem('refresh_token');
-      })(),
+      refreshToken: this.state.refreshToken,
     };
     fetch('https://lyfer.jitcijk.org/v1/auth/refresh-tokens', {
       method: 'POST',
@@ -62,65 +79,105 @@ class Rank extends Component {
       },
     })
       .then((response) => {
-        if (response.status === 200) {
-          return response.json();
-        } else {
+        if (response.status !== 200) {
           this.props.navigation.navigate('Auth');
         }
+        return response.json();
       })
-      .then((responseJson) => {
-        AsyncStorage.setItem('access_token', responseJson.tokens.access.token);
-        AsyncStorage.setItem(
-          'refresh_token',
-          responseJson.tokens.refresh.token,
-        );
+      .then(async (responseJson) => {
+        await AsyncStorage.setItem('access_token', responseJson.access.token);
+        await AsyncStorage.setItem('refresh_token', responseJson.refresh.token);
+        this.setState({
+          accessToken: responseJson.access.token,
+          refreshToken: responseJson.refresh.token,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
       });
   }
   _renderTextInput() {
     return (
-      <View>
+      <View style={styles.textInputWrapper}>
         <TextInput style={styles.textInput} />
       </View>
     );
   }
   _renderUsers() {
+    const {theme} = this.props;
     return (
-      <View>
-        <TextInput style={styles.textInput} />
+      <View style={styles.userListWrapper}>
+        <FlatList
+          data={this.state.userList}
+          renderItem={({item}) => {
+            return (
+              <View style={styles.userInfo}>
+                <Text style={[styles.userName, {color: theme.colors.text}]}>
+                  {item.name}
+                </Text>
+                <Text style={[styles.userUsername, {color: theme.colors.text}]}>
+                  @{item.username}
+                </Text>
+              </View>
+            );
+          }}
+          keyExtractor={(item, index) => index.toString()}
+        />
       </View>
     );
   }
   _renderLeftRightArrow() {
+    const {theme} = this.props;
     return (
       <View style={styles.buttonWrapper}>
-        <Button
-          title="<"
-          style={styles.button}
+        <TouchableHighlight
+          style={[
+            styles.button,
+            {
+              backgroundColor: theme.colors.text,
+              color: theme.colors.background,
+            },
+          ]}
           onPress={() => {
-            this.state.currentPage > 0
-              ? this.setState({currentPage: this.state.currentPage - 1})
-              : 1;
-          }}
-        />
-        <Button
-          title=">"
-          style={styles.button}
+            if (this.state.currentPage > 1) {
+              this.setState({currentPage: this.state.currentPage - 1});
+              console.log(this.state.currentPage);
+              this.getUsers();
+            }
+          }}>
+          <Text style={[styles.buttonText, {color: theme.colors.background}]}>
+            {'<'}
+          </Text>
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={[
+            styles.button,
+            {
+              backgroundColor: theme.colors.text,
+              color: theme.colors.background,
+            },
+          ]}
           onPress={() => {
-            this.state.currentPage < this.state.totalPage
-              ? this.setState({currentPage: this.state.currentPage + 1})
-              : 1;
-          }}
-        />
+            if (this.state.currentPage < this.state.totalPages) {
+              this.setState({currentPage: this.state.currentPage + 1});
+              console.log(this.state.currentPage);
+              this.getUsers();
+            }
+          }}>
+          <Text style={[styles.buttonText, {color: theme.colors.background}]}>
+            {'>'}
+          </Text>
+        </TouchableHighlight>
       </View>
     );
   }
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.top}>{this._renderTextInput()}</View>
         <View style={styles.middle}>{this._renderUsers()}</View>
         <View style={styles.bottom}>{this._renderLeftRightArrow()}</View>
-      </View>
+      </SafeAreaView>
     );
   }
 }
@@ -130,11 +187,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flex: 1,
   },
+  textInputWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  userListWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   top: {
     flex: 1,
   },
   middle: {
-    flex: 4,
+    flex: 5,
   },
   bottom: {
     flex: 1,
@@ -150,6 +215,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 8,
+  },
+  buttonText: {
+    fontFamily: 'CircularStd-Medium',
+    fontSize: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  userInfo: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+  userName: {
+    marginBottom: 10,
+    fontFamily: 'CircularStd-Medium',
+    fontSize: 20,
+    alignSelf: 'center',
+  },
+  userUsername: {
+    marginLeft: 10,
+    marginBottom: 10,
+    fontFamily: 'CircularStd-Medium',
+    fontSize: 15,
+    alignSelf: 'center',
   },
 });
 

@@ -124,7 +124,12 @@ export function DrawerContent(props) {
         <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => toggleTheme()}>
             <View style={styles.preference}>
-              <Text>Dark Theme</Text>
+              <Text
+                style={{
+                  fontFamily: 'CircularStd-Medium',
+                }}>
+                Dark Theme
+              </Text>
               <View pointerEvents="none">
                 <ToggleSwitch
                   isOn={paperTheme.dark}

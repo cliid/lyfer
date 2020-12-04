@@ -1,12 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 
 function AboutScreen() {
   const {colors} = useTheme();
 
   return (
-    <View style={[styles.container, {backgroundColor: colors.background}]}>
+    <SafeAreaView
+      style={[styles.container, {backgroundColor: colors.background}]}>
       <View style={[styles.centerText, {backgroundColor: colors.background}]}>
         <Text style={[styles.about, {color: colors.text}]}>Made with ❤ by</Text>
         <Text style={[styles.about, {color: colors.text}]}>cliid & Shio.</Text>
@@ -20,7 +21,7 @@ function AboutScreen() {
           A product of Jitcijk Inc.
         </Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
   },
   about: {
     fontSize: 20,
-    fontFamily: 'CircularStd-Book',
+    fontFamily: 'CircularStd-Medium',
     textAlign: 'center',
     margin: 10,
   },

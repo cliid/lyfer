@@ -17,6 +17,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import MainScreen from './src/screens/MainScreen';
 import SplashScreen from './src/screens/SplashScreen';
 import AuthScreen from './src/screens/AuthScreen';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 
@@ -82,7 +83,7 @@ const App = () => {
     <PaperProvider theme={theme}>
       <Context.Provider value={context}>
         <NavigationContainer theme={theme}>
-          <Stack.Navigator initialRouteName="SplashScreen">
+          <Stack.Navigator initialRouteName="Splash">
             <Stack.Screen
               name="Splash"
               component={SplashScreen}
