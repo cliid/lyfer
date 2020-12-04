@@ -16,14 +16,14 @@ export default function MainScreen({navigation}) {
     <Drawer.Navigator
       initialRouteName="Clock"
       edgeWidth={10000}
-      drawerType="front"
+      drawerType="back"
       drawerContent={(props) => <DrawerContent {...props} />}>
       <Drawer.Screen name="Clock" component={ClockScreen} />
       <Drawer.Screen name="Music" component={MusicScreen} />
       <Drawer.Screen name="Calculator" component={CalculatorScreen} />
       <Drawer.Screen name="Planner" component={PlannerScreen} />
-      <Drawer.Screen name="Rank" component={RankScreen} />
       <Drawer.Screen name="About" component={AboutScreen} />
+      <Drawer.Screen name="Rank" component={RankScreen} />
     </Drawer.Navigator>
   );
 }
