@@ -136,7 +136,8 @@ export function DrawerContent(props) {
                   onToggle={() => {}}
                   onColor="#4287f5"
                   offColor="#eceaec"
-                  animationSpeed={250}
+                  animationSpeed={200}
+                  useNativeDriver={true}
                 />
               </View>
             </View>

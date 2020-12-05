@@ -2,13 +2,18 @@ import {useEffect} from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 
 import AsyncStorage from '@react-native-community/async-storage';
+import {startTracking} from '../util/tracking';
 
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
     const init = async () => {
-      AsyncStorage.getItem('access_token').then((value) =>
-        navigation.replace(value === null ? 'Auth' : 'Main'),
-      );
+      AsyncStorage.getItem('access_token').then((value) => {
+        if (value === null) {
+          navigation.replace('Auth');
+          return;
+        }
+        navigation.replace('Main');
+      });
     };
 
     init().finally(async () => {

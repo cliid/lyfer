@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PureComponent} from 'react';
 
 // import all the components we are going to use
 import {
@@ -12,6 +12,55 @@ import {
 
 import AsyncStorage from '@react-native-community/async-storage';
 import {useTheme} from 'react-native-paper';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+function Item(props) {
+  const theme = useTheme();
+
+  return <ItemClass {...props} theme={theme} />;
+}
+class ItemClass extends PureComponent {
+  render() {
+    const {theme, item} = this.props;
+    let icon;
+    switch (item.role) {
+      case 'lite':
+        icon = (
+          <Text style={[styles.userRole, {color: theme.colors.text}]}>
+            [LITE]
+          </Text>
+        );
+        break;
+      case 'pro':
+        icon = (
+          <Text style={[styles.userRole, {color: theme.colors.text}]}>
+            [PRO]
+          </Text>
+        );
+        break;
+      case 'dev':
+        icon = (
+          <Text style={[styles.userRole, {color: theme.colors.text}]}>
+            [DEV]
+          </Text>
+        );
+        break;
+    }
+    return (
+      <View style={styles.userInfo}>
+        {icon}
+        <View style={styles.userProfile}>
+          <Text style={[styles.userName, {color: theme.colors.text}]}>
+            {item.name}
+          </Text>
+          <Text style={[styles.userUsername, {color: theme.colors.text}]}>
+            @{item.username}
+          </Text>
+        </View>
+      </View>
+    );
+  }
+}
 
 class Rank extends Component {
   constructor(props) {
@@ -128,18 +177,8 @@ class Rank extends Component {
     );
   }
 
-  ItemView({item}) {
-    const {theme} = this.props;
-    return (
-      <View style={styles.userInfo}>
-        <Text style={[styles.userName, {color: theme.colors.text}]}>
-          {item.name}
-        </Text>
-        <Text style={[styles.userUsername, {color: theme.colors.text}]}>
-          @{item.username}
-        </Text>
-      </View>
-    );
+  ItemView({item, index}) {
+    return <Item item={item} index={index} />;
   }
 
   ItemSeparatorView() {
@@ -183,18 +222,24 @@ const styles = StyleSheet.create({
   userInfo: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
+    alignItems: 'center',
   },
+  userProfile: {},
   userName: {
-    marginLeft: 30,
+    marginLeft: 20,
     fontFamily: 'CircularStd-Medium',
     fontSize: 20,
-    alignSelf: 'center',
   },
   userUsername: {
-    marginLeft: 10,
+    marginLeft: 20,
     fontFamily: 'CircularStd-Medium',
     fontSize: 15,
-    alignSelf: 'center',
+  },
+
+  userRole: {
+    marginLeft: 20,
+    fontFamily: 'CircularStd-Black',
+    fontSize: 20,
   },
 });
 

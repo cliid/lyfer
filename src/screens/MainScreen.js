@@ -23,7 +23,11 @@ export default function MainScreen({navigation}) {
       <Drawer.Screen name="Calculator" component={CalculatorScreen} />
       <Drawer.Screen name="Planner" component={PlannerScreen} />
       <Drawer.Screen name="About" component={AboutScreen} />
-      <Drawer.Screen name="Rank" component={RankScreen} />
+      <Drawer.Screen
+        name="Rank"
+        component={RankScreen}
+        options={{unmountOnBlur: true}}
+      />
     </Drawer.Navigator>
   );
 }
