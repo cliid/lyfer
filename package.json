@@ -18,6 +18,7 @@
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
     "deepmerge": "^4.2.2",
+    "inspirational-quotes": "^1.0.8",
     "minutes-seconds-milliseconds": "^1.0.3",
     "react": "16.13.1",
     "react-native": "0.63.3",

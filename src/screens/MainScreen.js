@@ -8,6 +8,7 @@ import CalculatorScreen from './main/CalculatorScreen';
 import PlannerScreen from './main/PlannerScreen';
 import RankScreen from './main/RankScreen';
 import AboutScreen from './main/AboutScreen';
+import LuckyScreen from './main/LuckyScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,6 +19,7 @@ export default function MainScreen({navigation}) {
       edgeWidth={10000}
       drawerType="back"
       drawerContent={(props) => <DrawerContent {...props} />}>
+      <Drawer.Screen name="Lucky" component={LuckyScreen} />
       <Drawer.Screen name="Clock" component={ClockScreen} />
       <Drawer.Screen name="Music" component={MusicScreen} />
       <Drawer.Screen name="Calculator" component={CalculatorScreen} />

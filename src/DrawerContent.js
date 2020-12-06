@@ -52,6 +52,22 @@ export function DrawerContent(props) {
           <DrawerItem
             icon={({color, size}) => (
               <MaterialCommunityIcons
+                name="emoticon-lol-outline"
+                color={color}
+                size={size}
+              />
+            )}
+            label="Feelin' Lucky"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.navigate('Lucky');
+            }}
+          />
+        </Drawer.Section>
+        <Drawer.Section style={styles.drawerSection}>
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons
                 name="clock-time-four-outline"
                 color={color}
                 size={size}
@@ -174,6 +190,22 @@ export function DrawerContent(props) {
                 ],
                 {cancelable: false},
               );
+            }}
+          />
+        </Drawer.Section>
+        <Drawer.Section>
+          <DrawerItem
+            icon={({color, size}) => (
+              <MaterialCommunityIcons
+                name="patreon"
+                color={color}
+                size={size}
+              />
+            )}
+            label="Donate on PayPal"
+            labelStyle={{fontFamily: 'CircularStd-Medium'}}
+            onPress={() => {
+              props.navigation.toggleDrawer();
             }}
           />
         </Drawer.Section>
