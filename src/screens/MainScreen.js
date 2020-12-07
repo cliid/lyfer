@@ -19,7 +19,11 @@ export default function MainScreen({navigation}) {
       edgeWidth={10000}
       drawerType="back"
       drawerContent={(props) => <DrawerContent {...props} />}>
-      <Drawer.Screen name="Lucky" component={LuckyScreen} />
+      <Drawer.Screen
+        name="Lucky"
+        component={LuckyScreen}
+        options={{unmountOnBlur: true}}
+      />
       <Drawer.Screen name="Clock" component={ClockScreen} />
       <Drawer.Screen name="Music" component={MusicScreen} />
       <Drawer.Screen name="Calculator" component={CalculatorScreen} />

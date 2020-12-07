@@ -30,6 +30,7 @@ android/.gradle/6.2/javaCompile/taskHistory.bin
 android/.gradle
 android/.gradle/*
 android/app/build/*
+android/gradle.properties.prod
 /build/
 /packages/react-native-codegen/android/build/
 /packages/react-native-codegen/android/gradlePlugin-build/gradlePlugin/build

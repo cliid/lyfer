@@ -28,6 +28,7 @@
 		E6E662DB65FF4969A2E94E38 /* CircularStd-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7B8FE5CE35D4796ACF7E2DC /* CircularStd-BlackItalic.ttf */; };
 		F9F21575BD0E2D8323811B59 /* libPods-lyfer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A646A5255050DD903C752EFF /* libPods-lyfer-tvOSTests.a */; };
 		FE065A3585929F3BB1A4FDF3 /* libPods-lyfer-lyferTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6936F3A085F915E044D29A3E /* libPods-lyfer-lyferTests.a */; };
+		26197700C56544E0B3068C77 /* TwitterColorEmoji-SVGinOT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45108C7D8E40431893BA6714 /* TwitterColorEmoji-SVGinOT.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F821F010FFB6474489A08706 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		F97FB3919387866A0AE34927 /* libPods-lyfer-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lyfer-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45108C7D8E40431893BA6714 /* TwitterColorEmoji-SVGinOT.ttf */ = {isa = PBXFileReference; name = "TwitterColorEmoji-SVGinOT.ttf"; path = "../src/assets/fonts/TwitterColorEmoji-SVGinOT.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				0E32131A0AAF4D649B74155C /* CircularStd-BookItalic.ttf */,
 				0C24B56DBA8D4A778DD846A4 /* CircularStd-Medium.ttf */,
 				5827C0A947974E1C80BFF215 /* CircularStd-MediumItalic.ttf */,
+				45108C7D8E40431893BA6714 /* TwitterColorEmoji-SVGinOT.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				4EC75E0BCAF748C497581045 /* CircularStd-BookItalic.ttf in Resources */,
 				93C71748A0CF48B888BA85AF /* CircularStd-Medium.ttf in Resources */,
 				1154D14EF4814C0BBB40CBEE /* CircularStd-MediumItalic.ttf in Resources */,
+				26197700C56544E0B3068C77 /* TwitterColorEmoji-SVGinOT.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

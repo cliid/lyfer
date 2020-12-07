@@ -4,26 +4,28 @@ import {
   StyleSheet,
   Text,
   SafeAreaView,
-  TouchableOpacity,
+  TouchableHighlight,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
 import {randomNoRepeats} from '../../util/random';
 import {getJoke} from '../../util/random-joke';
+import Emoji from '../../components/Emoji';
 
 function LuckyScreen() {
   const emoji = [
-    ...'😀😃😁😆😂🤣☺😊🙂🙃😉😍😘😚😋😝😜🤪🤨🧐🤓😎🤩🥳😏😒😭😤🤯😳🤗🤔😬🙄🥴🤒', // 37 emojis
+    ...'😁😆😂🤣😊🙃😉😍😘😚😋😝😜🤪🤨🧐🤓😎🤩🥳😏😒😭😤🤯😳🤔🙄🥴', // 36 emojis
   ];
   const {colors} = useTheme();
   const chooser = randomNoRepeats(emoji);
-  const [currentEmoji, setCurrentEmoji] = useState(chooser());
-  const [currentJoke, setCurrentJoke] = useState({setup: '', punchline: ''});
+  const [currentJoke, setCurrentJoke] = useState({
+    setup: 'Programming Jokes!',
+    punchline: 'Yikes!',
+  });
+  const [twemoji, setTwemoji] = useState(<Emoji>🤣</Emoji>);
   return (
     <SafeAreaView
       style={[styles.container, {backgroundColor: colors.background}]}>
-      <View style={styles.emojiWrapper}>
-        <Text style={[styles.emoji, {color: colors.text}]}>{currentEmoji}</Text>
-      </View>
+      <View style={styles.emojiWrapper}>{twemoji}</View>
       <View style={styles.setupWrapper}>
         <Text style={[styles.setup, {color: colors.text}]}>
           {'"' + currentJoke.setup + '"'}
@@ -35,13 +37,25 @@ function LuckyScreen() {
         </Text>
       </View>
       <View style={styles.nextJokeButtonWrapper}>
-        <TouchableOpacity
+        <TouchableHighlight
           onPress={() => {
-            setCurrentEmoji(chooser());
-            getJoke().then((joke) => setCurrentJoke(joke));
-          }}>
-          <Text style={styles.nextJokeButton}>Next joke!</Text>
-        </TouchableOpacity>
+            getJoke().then((joke) => {
+              setTwemoji(<Emoji>{chooser()}</Emoji>);
+              setCurrentJoke(joke);
+            });
+          }}
+          style={[
+            styles.nextJokeButton,
+            {
+              backgroundColor: colors.text,
+              underlayColor: colors.disabled,
+              shadowColor: colors.text,
+            },
+          ]}>
+          <Text style={[styles.nextJokeButtonText, {color: colors.background}]}>
+            Next joke!
+          </Text>
+        </TouchableHighlight>
       </View>
     </SafeAreaView>
   );
@@ -52,7 +66,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   setup: {
-    fontSize: 20,
+    fontSize: 19,
     fontFamily: 'CircularStd-Medium',
     textAlign: 'center',
     marginLeft: 30,
@@ -65,9 +79,10 @@ const styles = StyleSheet.create({
     marginLeft: 30,
     marginRight: 30,
   },
-  emoji: {
-    fontSize: 40,
+
+  nextJokeButtonText: {
     fontFamily: 'CircularStd-Medium',
+    fontSize: 15,
   },
 
   setupWrapper: {
@@ -86,8 +101,12 @@ const styles = StyleSheet.create({
     flex: 3,
   },
   nextJokeButton: {
-    fontSize: 30,
-    fontFamily: 'CircularStd-Medium',
+    height: 80,
+    width: 180,
+    borderRadius: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 8,
   },
   nextJokeButtonWrapper: {
     justifyContent: 'center',
